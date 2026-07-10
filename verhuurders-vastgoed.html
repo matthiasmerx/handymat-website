@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tarieven | Handymat Services Haarlem</title>
-<meta name="description" content="Tarieven Handymat Services Haarlem. Uurtarief klusjesman Haarlem, dagtarief, vaste prijzen. Inclusief en exclusief BTW.">
+<title>Klusjesman voor verhuurders en vastgoedbeheer | Handymat Services</title>
+<meta name="description" content="Handymat Services is vast aanspreekpunt voor verhuurders, vastgoedbeheerders en VVE's in Haarlem en Kennemerland: mutatieonderhoud, kleine reparaties en oplevering van huurwoningen.">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 
@@ -172,95 +172,127 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 }
 
 
-.tarieven-hero {
-  background:#5a8a2e;
-  padding:48px 40px;
-  text-align:center;
+/* OVER MIJ */
+.over-intro {
+  background: #5a8a2e;
+  padding: 30px 40px;
+  text-align: center;
 }
 
-.tarieven-hero h2 {
-  font-size:1.8rem;
-  font-weight:400;
-  color:#fff;
-  font-style:italic;
-  margin-bottom:16px;
+.over-intro h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 auto 12px;
 }
 
-.tarieven-hero p {
-  color:rgba(255,255,255,0.9);
-  font-size:1rem;
-  line-height:1.75;
-  max-width:600px;
-  margin:0 auto;
+.over-intro p {
+  color: rgba(255,255,255,0.92);
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 680px;
+  margin: 0 auto 12px;
 }
 
-.tarieven-content {
-  max-width:700px;
-  margin:0 auto;
-  padding:60px 40px;
+.over-intro blockquote {
+  color: #fff;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  max-width: 680px;
+  margin: 0 auto;
 }
 
-.btw-toggle {
-  display:flex;
-  align-items:center;
-  gap:16px;
-  margin-bottom:32px;
-  font-size:0.95rem;
-  color:#555;
+.over-bio {
+  padding: 70px 40px;
+  background: #fff;
 }
 
-.btw-toggle label {
-  display:flex;
-  align-items:center;
-  gap:8px;
-  cursor:pointer;
+.over-bio-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
 }
 
-.btw-toggle input[type=radio] {
-  accent-color:#5a8a2e;
-  width:18px;
-  height:18px;
+.over-bio-inner img {
+  width: 320px;
+  flex-shrink: 0;
+  border-radius: 8px;
 }
 
-.tarieven-content table {
-  width:100%;
-  border-collapse:collapse;
-  font-size:0.95rem;
+.over-bio-text p {
+  color: #555;
+  font-size: 0.97rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
-thead tr {
-  background:#3a6b1e;
-  color:#fff;
-}
-
-thead th {
-  padding:14px 16px;
-  text-align:left;
-  font-weight:500;
-}
-
-tbody tr:nth-child(even) {
-  background:#f5f5f5;
-}
-
-tbody tr:nth-child(odd) {
-  background:#fff;
-}
-
-tbody td {
-  padding:13px 16px;
-  border-bottom:1px solid #e8e8e8;
-  color:#444;
-  vertical-align:top;
-}
-
-.noot {
-  margin-top:20px;
-  font-size:0.85rem;
-  color:#777;
-  line-height:1.7;
+@media(max-width:768px) {
+  .over-bio-inner { flex-direction: column; }
+  .over-bio-inner img { width: 100%; }
 }
 </style>
+
+<style>
+.page-hero {
+  background:#5a8a2e;
+  padding:30px 40px;
+  text-align:center;
+}
+.page-hero h2 {
+  font-weight:400;
+  font-size:2rem;
+  color:#fff;
+  margin-bottom:12px;
+}
+.page-hero p {
+  color:rgba(255,255,255,0.92);
+  font-size:1rem;
+  line-height:1.6;
+  max-width:700px;
+  margin:0 auto;
+}
+.page-body {
+  padding:60px 40px;
+  background:#fff;
+  max-width:900px;
+  margin:0 auto;
+}
+.page-body h3 {
+  font-size:1.3rem;
+  font-weight:500;
+  color:#3a6b1e;
+  margin:30px 0 12px;
+}
+.page-body h3:first-child { margin-top:0; }
+.page-body p {
+  color:#555;
+  font-size:0.97rem;
+  line-height:1.75;
+  margin-bottom:14px;
+}
+.page-body ul {
+  color:#555;
+  font-size:0.97rem;
+  line-height:1.9;
+  margin:0 0 14px 20px;
+}
+.page-cta {
+  text-align:center;
+  padding:50px 40px;
+  background:#3a6b1e;
+}
+.page-cta p {
+  color:#fff;
+  font-size:1.1rem;
+  max-width:650px;
+  margin:0 auto;
+  line-height:1.6;
+}
+</style>
+
 </head>
 <body>
 
@@ -269,11 +301,11 @@ tbody td {
   <a href="over-mij.html">Over mij</a>
   <a href="diensten.html">Diensten</a>
   <a href="portfolio.html">Portfolio</a>
-  <a href="tarieven.html" class="active">Tarieven</a>
+  <a href="tarieven.html">Tarieven</a>
   <a href="contact.html">Contact</a>
 </nav>
 
-<h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Tarieven klusjesman Haarlem</h1>
+<h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Verhuurders &amp; vastgoedbeheer Haarlem</h1>
 
 <div class="header-top">
   <table>
@@ -284,61 +316,34 @@ tbody td {
   </table>
 </div>
 
-<section class="tarieven-hero">
-  <h2>"Weet waar je aan toe bent. Vooraf."</h2>
-  <p>Ik werk in principe overdag. Mochten we afspreken dat de avond of weekend beter uitkomt, dan hanteer ik dezelfde prijzen.</p>
+<section class="page-hero">
+  <h2>Verhuurders &amp; vastgoedbeheer</h2>
+  <p>Vast aanspreekpunt voor onderhoud, reparaties en oplevering van huurwoningen in Haarlem en Kennemerland.</p>
 </section>
 
-<div class="tarieven-content">
+<section class="page-body">
 
-  <div class="btw-toggle">
-    <strong>Toon prijzen:</strong>
-    <label><input type="radio" name="btw" value="incl" checked onchange="toggleBtw(this)"> Inclusief BTW (particulier)</label>
-    <label><input type="radio" name="btw" value="excl" onchange="toggleBtw(this)"> Exclusief BTW (zakelijk)</label>
-  </div>
+<h3>Voor verhuurders</h3>
+<p>Een huurwoning vraagt om snel schakelen: een kraan die lekt, een deur die klemt, of de woning die klaargemaakt moet worden voor een nieuwe huurder. Ik pak dit soort klussen snel en zonder gedoe op, met korte lijnen en duidelijke afspraken.</p>
+<ul>
+<li>Kleine reparaties en aanpassingen namens de huurder</li>
+<li>Spullen ophangen of monteren bij verhuizing</li>
+<li>Oplevering van de huurwoning klaarmaken</li>
+</ul>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Omschrijving</th>
-        <th>Prijs</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Per uur</td>
-        <td><span class="incl">€ 65,00</span><span class="excl" style="display:none">€ 53,72</span></td>
-      </tr>
-      <tr>
-        <td>Halve dag</td>
-        <td><span class="incl">€ 250,00</span><span class="excl" style="display:none">€ 206,61</span></td>
-      </tr>
-      <tr>
-        <td>Per dag</td>
-        <td><span class="incl">€ 500,00</span><span class="excl" style="display:none">€ 413,22</span></td>
-      </tr>
-      <tr>
-        <td>Fixed prijs</td>
-        <td>Na offerte</td>
-      </tr>
-      <tr>
-        <td>Kosten reistijd (regio Kennemerland)</td>
-        <td><span class="incl">€ 0,00</span><span class="excl" style="display:none">€ 0,00</span> <small>(* zie opmerking)</small></td>
-      </tr>
-      <tr>
-        <td>Klein materiaal (schroeven, pluggen, spijkers, etc.)</td>
-        <td>Nacalculatie</td>
-      </tr>
-      <tr>
-        <td>Groot materiaal (hout, plaatmateriaal, verf, etc.)</td>
-        <td>In overleg</td>
-      </tr>
-    </tbody>
-  </table>
+<h3>Voor vastgoed- en VVE beheerders</h3>
+<p>Voor beheerders met meerdere panden of een VVE ben ik een vast aanspreekpunt: één klusjesman die het onderhoud oppakt, in plaats van steeds opnieuw iemand moeten zoeken.</p>
+<ul>
+<li>Mutatieonderhoud tussen huurders in</li>
+<li>Kleine reparaties op aanvraag</li>
+<li>Ondersteuning bij oplevering en inspectie</li>
+</ul>
 
-  <p class="noot">* Voor klussen korter dan een dagdeel en op meer dan 15 km vanaf vestigingsadres kan ik reiskostenvergoeding van € 15,00 in rekening brengen.</p>
+</section>
 
-</div>
+<section class="page-cta">
+  <p>Op zoek naar een vaste klusjesman voor je huurwoningen? Neem contact op om de mogelijkheden te bespreken.</p>
+</section>
 
 <footer style="background:#f5f5f5;padding:28px 40px;text-align:center;border-top:1px solid #ddd;">
   <p style="color:#555;margin-bottom:8px;">Handymat Services &bull; Haarlem &amp; Kennemerland</p>
@@ -353,20 +358,6 @@ tbody td {
   </p>
   <p style="color:#999;font-size:0.82rem;">&copy; 2026 Handymat Services</p>
 </footer>
-
-<script>
-function toggleBtw(el) {
-  const incl = document.querySelectorAll('.incl');
-  const excl = document.querySelectorAll('.excl');
-  if (el.value === 'incl') {
-    incl.forEach(e => e.style.display = '');
-    excl.forEach(e => e.style.display = 'none');
-  } else {
-    incl.forEach(e => e.style.display = 'none');
-    excl.forEach(e => e.style.display = '');
-  }
-}
-</script>
 
 </body>
 </html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diensten | Handymat Services Haarlem &amp; Kennemerland</title>
+<meta name="description" content="Handymat Services: klein onderhoud en kleine renovaties in badkamer, keuken en huis. Ook vast aanspreekpunt voor huurdersklussen en vastgoedbeheerders in Haarlem, Kennemerland en Amsterdam.">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Roboto',Arial,sans-serif; color:#333; background:#fff; }
+body { margin:0; }
+
+/* HEADER */
+.header-top {
+  background:#fff;
+  padding:0 40px;
+  text-align:center;
+}
+
+.header-top table {
+  margin:0 auto;
+  border-collapse:collapse;
+  line-height:0;
+}
+
+.header-top table td {
+  vertical-align:middle;
+  padding:4px 16px;
+}
+
+.header-top table td img {
+  width:300px;
+  height:auto;
+  display:block;
+}
+
+.header-top table td h1 {
+  font-family:'Roboto',Arial,sans-serif;
+  font-weight:300;
+  font-size:2.2rem;
+  color:#5a8a2e;
+  line-height:1;
+}
+
+/* NAV */
+.header-nav {
+  text-align:center;
+  background:#f7f7f7;
+  border-bottom:2px solid #3a6b1e;
+  padding:0;
+}
+
+.header-nav a {
+  display:inline-block;
+  padding:16px 24px;
+  color:#555;
+  text-decoration:none;
+  font-size:1rem;
+}
+
+.header-nav a:hover { color:#3a6b1e; }
+.header-nav a.active {
+  background:#3a6b1e;
+  color:#fff;
+  font-weight:500;
+}
+
+/* HERO */
+.hero {
+  background:#5a8a2e;
+  padding:60px 20px;
+  text-align:center;
+}
+
+.hero h2 {
+  font-weight:400;
+  font-size:2rem;
+  color:#fff;
+  margin-bottom:24px;
+  font-style:italic;
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.hero p {
+  color:rgba(255,255,255,0.9);
+  font-size:1rem;
+  line-height:1.8;
+  max-width:800px;
+  margin:0 auto 12px;
+}
+
+/* DIENSTEN */
+.diensten {
+  padding:70px 40px;
+  background:#fff;
+}
+
+.diensten h2 {
+  text-align:center;
+  font-size:2rem;
+  font-weight:300;
+  color:#5a9e3a;
+  margin-bottom:16px;
+}
+
+.diensten .intro {
+  text-align:center;
+  color:#666;
+  max-width:700px;
+  margin:0 auto 48px;
+  line-height:1.7;
+}
+
+.diensten-grid {
+  max-width:1100px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
+}
+
+.dienst {
+  text-align:left;
+}
+
+.dienst img {
+  height:200px;
+  width:auto;
+  margin-bottom:20px;
+  display:block;
+}
+
+.dienst h3 {
+  font-size:1.3rem;
+  font-weight:400;
+  color:#5a9e3a;
+  margin-bottom:10px;
+}
+
+.dienst p {
+  color:#555;
+  font-size:0.92rem;
+  line-height:1.75;
+}
+
+/* FOOTER */
+footer {
+  background:#222;
+  padding:36px;
+  text-align:center;
+}
+
+footer img { width:200px; height:auto; margin-bottom:14px; }
+footer p { color:rgba(255,255,255,0.4); font-size:0.82rem; margin:4px 0; }
+footer a { color:rgba(255,255,255,0.45); text-decoration:none; margin:0 10px; }
+footer a:hover { color:rgba(255,255,255,0.75); }
+
+@media(max-width:768px){
+  .header-top { padding:16px 20px; }
+  .header-top table, .header-top table tr, .header-top table td { display:block; width:100%; text-align:center; }
+  .header-top table td { padding:4px 0; }
+  .header-top table td img { width:200px; margin:0 auto; }
+  .header-top table td h1 { font-size:1.5rem; }
+  .header-nav a { padding:10px 16px; font-size:0.85rem; }
+  .diensten-grid { grid-template-columns:1fr; } 
+  
+  
+}
+
+
+/* OVER MIJ */
+.over-intro {
+  background: #5a8a2e;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.over-intro h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 auto 12px;
+}
+
+.over-intro p {
+  color: rgba(255,255,255,0.92);
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 680px;
+  margin: 0 auto 12px;
+}
+
+.over-intro blockquote {
+  color: #fff;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.over-bio {
+  padding: 70px 40px;
+  background: #fff;
+}
+
+.over-bio-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.over-bio-inner img {
+  width: 320px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.over-bio-text p {
+  color: #555;
+  font-size: 0.97rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+@media(max-width:768px) {
+  .over-bio-inner { flex-direction: column; }
+  .over-bio-inner img { width: 100%; }
+}
+</style>
+
+<style>
+.diensten-page-intro {
+  background:#5a8a2e;
+  padding:30px 40px;
+  text-align:center;
+}
+.diensten-page-intro h2 {
+  font-weight:400;
+  font-size:2rem;
+  color:#fff;
+  font-style:italic;
+  margin-bottom:12px;
+}
+.diensten-page-intro p {
+  color:rgba(255,255,255,0.92);
+  font-size:1rem;
+  line-height:1.6;
+  max-width:700px;
+  margin:0 auto;
+}
+
+.diensten-section {
+  padding:60px 40px;
+  background:#fff;
+}
+.diensten-section:nth-child(even) { background:#f9f9f7; }
+
+.diensten-section h2 {
+  text-align:center;
+  font-size:1.7rem;
+  font-weight:400;
+  color:#5a9e3a;
+  margin-bottom:8px;
+}
+.diensten-section .section-intro {
+  text-align:center;
+  color:#666;
+  max-width:700px;
+  margin:0 auto 40px;
+  line-height:1.6;
+  font-size:0.95rem;
+}
+
+.dienst-cards {
+  max-width:1100px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+}
+.dienst-cards.single-row { grid-template-columns:repeat(2,1fr); max-width:800px; }
+
+.dienst-card {
+  background:#fff;
+  border:1px solid #e5e5e0;
+  border-radius:8px;
+  padding:24px;
+}
+.dienst-card h3 {
+  font-size:1.15rem;
+  font-weight:500;
+  color:#3a6b1e;
+  margin-bottom:14px;
+}
+.dienst-card p {
+  font-size:0.88rem;
+  line-height:1.6;
+  color:#555;
+  margin-bottom:10px;
+}
+.dienst-card p.wel { border-left:3px solid #5a9e3a; padding-left:10px; }
+.dienst-card p.niet { border-left:3px solid #ccc; padding-left:10px; color:#888; }
+.dienst-card p strong { color:#333; }
+
+.diensten-cta {
+  text-align:center;
+  padding:50px 40px;
+  background:#3a6b1e;
+}
+.diensten-cta p {
+  color:#fff;
+  font-size:1.1rem;
+  max-width:650px;
+  margin:0 auto;
+  line-height:1.6;
+}
+
+@media(max-width:768px) {
+  .dienst-cards { grid-template-columns:1fr; }
+  .dienst-cards.single-row { grid-template-columns:1fr; }
+}
+</style>
+
+</head>
+<body>
+
+<nav class="header-nav">
+  <a href="index.html">Home</a>
+  <a href="over-mij.html">Over mij</a>
+  <a href="diensten.html" class="active">Diensten</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="tarieven.html">Tarieven</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Diensten klusjesman Haarlem</h1>
+
+<div class="header-top">
+  <table>
+    <tr>
+      <td><img src="images/logo.png" alt="Handymat Services logo"></td>
+      <td><p style="font-family:'Roboto',Arial,sans-serif;font-weight:300;font-size:2.2rem;color:#5a8a2e;line-height:1;">Klussen en<br>renovatie</p></td>
+    </tr>
+  </table>
+</div>
+
+<section class="diensten-page-intro">
+  <h2>"Wat ik voor je kan doen"</h2>
+  <p>Van een kleine reparatie tot een opknapbeurt in de badkamer of keuken. Staat jouw klus er niet tussen? Overleg is altijd mogelijk, ik denk graag mee over wat wel kan.</p>
+</section>
+
+<section class="diensten-section">
+  <div class="dienst-cards">
+
+    <div class="dienst-card">
+      <h3>Badkamer</h3>
+      <p class="wel"><strong>Wat ik doe:</strong> nieuwe wastafel, badkamermeubel of douchewand plaatsen, tegelwerk herstellen of gedeeltelijk vernieuwen, kitwerk vernieuwen, lekkages verhelpen, kleine indelingswijzigingen, sanitair vervangen, water- en afvoerleidingen verleggen.</p>
+      <p class="niet"><strong>Wat ik niet doe:</strong> CV- of gasgerelateerd werk.</p>
+    </div>
+
+    <div class="dienst-card">
+      <h3>Keuken</h3>
+      <p class="wel"><strong>Wat ik doe:</strong> keukenkastjes en werkblad vervangen of plaatsen, kitwerk vernieuwen, lekkages verhelpen, kleine indelingswijzigingen, keukenapparatuur aansluiten (niet-gas), afwerking en plinten.</p>
+      <p class="niet"><strong>Wat ik niet doe:</strong> CV- of gasgerelateerd werk.</p>
+    </div>
+
+    <div class="dienst-card">
+      <h3>Woonkamer</h3>
+      <p class="wel"><strong>Wat ik doe:</strong> laminaat of andere vloeren leggen, vloer egaliseren, plinten plaatsen, tv ophangen, gordijnrails ophangen.</p>
+    </div>
+
+    <div class="dienst-card">
+      <h3>Behangen &amp; schilderwerk</h3>
+      <p class="wel"><strong>Wat ik doe:</strong> wandreparatie en verf bijwerken, binnenschilderwerk, kozijnen en houtwerk schilderen, muren sausen.</p>
+    </div>
+
+    <div class="dienst-card">
+      <h3>Meubels</h3>
+      <p class="wel"><strong>Wat ik doe:</strong> wie is er niet dol op IKEA meubels ;-). Ik draai er mijn hand niet voor om, van meubels monteren tot kasten opbouwen.</p>
+    </div>
+
+    <div class="dienst-card">
+      <h3>Verlichting &amp; techniek</h3>
+      <p class="wel"><strong>Wat ik doe:</strong> lamp ophangen, lichtschakelaars en stopcontacten vervangen of verplaatsen, rookmelder plaatsen, tv/audio-installatie, wifi-dekking verbeteren met extra accesspoints, wifi- en smarthome-hulp.</p>
+      <p class="niet"><strong>Wat ik niet doe:</strong> aanpassingen aan de meterkast/groepenkast.</p>
+    </div>
+
+    <div class="dienst-card">
+      <h3>Vloeren &amp; ramen</h3>
+      <p class="wel"><strong>Wat ik doe:</strong> HR++ glas vervangen in losse, goed bereikbare ramen, vloer leggen, deur of raam stellen, vloerplinten plaatsen.</p>
+      <p class="niet"><strong>Wat ik niet doe:</strong> volledige woningen voorzien van nieuw glas waarvoor stellages nodig zijn.</p>
+    </div>
+
+    <div class="dienst-card">
+      <h3>Buiten</h3>
+      <p class="wel"><strong>Wat ik doe:</strong> tuinpad aanleggen, schutting of schuur repareren, tuinhuis opknappen.</p>
+    </div>
+
+  </div>
+</section>
+<section class="diensten-section">
+  <h2>Specialismen</h2>
+  <div class="dienst-cards">
+
+    <div class="dienst-card">
+      <h3><a href="verhuurders-vastgoed.html" style="color:#3a6b1e;text-decoration:none;">Verhuurders &amp; vastgoedbeheer</a></h3>
+      <p class="wel">Vast aanspreekpunt voor mutatieonderhoud, reparaties en oplevering van huurwoningen.</p>
+    </div>
+
+    <div class="dienst-card">
+      <h3><a href="it-diensten.html" style="color:#3a6b1e;text-decoration:none;">IT diensten</a></h3>
+      <p class="wel">Wifi, smarthome, laptop reparaties en hardware/software problemen op Mac en Windows, opgelost met 28 jaar IT-ervaring.</p>
+    </div>
+
+    <div class="dienst-card">
+      <h3><a href="wandpanelen.html" style="color:#3a6b1e;text-decoration:none;">Wandpanelen plaatsen</a></h3>
+      <p class="wel">Muur opfrissen met wandpanelen over bestaande tegels of muur, zonder sloopwerk. Voor badkamer, gang en andere ruimtes.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="diensten-cta">
+  <p>Staat jouw klus er niet tussen? Neem gerust contact op, samen bekijken we wat mogelijk is.</p>
+</section>
+
+<footer style="background:#f5f5f5;padding:28px 40px;text-align:center;border-top:1px solid #ddd;">
+  <p style="color:#555;margin-bottom:8px;">Handymat Services &bull; Haarlem &amp; Kennemerland</p>
+  <p style="margin-bottom:8px;">
+    <a href="tel:+31613432804" style="color:#555;text-decoration:none;margin:0 10px;">06 13432804</a>
+    <a href="mailto:info@handymat.nl" style="color:#555;text-decoration:none;margin:0 10px;">info@handymat.nl</a>
+  </p>
+  <p style="margin-bottom:8px;">
+    <a href="#" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
+    <a href="#" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
+    <a href="#" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
+  </p>
+  <p style="color:#999;font-size:0.82rem;">&copy; 2026 Handymat Services</p>
+</footer>
+
+</body>
+</html>

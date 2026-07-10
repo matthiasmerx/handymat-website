@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tarieven | Handymat Services Haarlem</title>
-<meta name="description" content="Tarieven Handymat Services Haarlem. Uurtarief klusjesman Haarlem, dagtarief, vaste prijzen. Inclusief en exclusief BTW.">
+<title>IT hulp aan huis | Handymat Services Haarlem</title>
+<meta name="description" content="IT-hulp aan huis in Haarlem en Kennemerland: wifi-dekking, smarthome, tv/audio-installatie, laptop reparaties en hardware- en softwareproblemen op Mac en Windows, door een klusjesman met 28 jaar IT-ervaring.">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 
@@ -172,95 +172,127 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 }
 
 
-.tarieven-hero {
-  background:#5a8a2e;
-  padding:48px 40px;
-  text-align:center;
+/* OVER MIJ */
+.over-intro {
+  background: #5a8a2e;
+  padding: 30px 40px;
+  text-align: center;
 }
 
-.tarieven-hero h2 {
-  font-size:1.8rem;
-  font-weight:400;
-  color:#fff;
-  font-style:italic;
-  margin-bottom:16px;
+.over-intro h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 auto 12px;
 }
 
-.tarieven-hero p {
-  color:rgba(255,255,255,0.9);
-  font-size:1rem;
-  line-height:1.75;
-  max-width:600px;
-  margin:0 auto;
+.over-intro p {
+  color: rgba(255,255,255,0.92);
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 680px;
+  margin: 0 auto 12px;
 }
 
-.tarieven-content {
-  max-width:700px;
-  margin:0 auto;
-  padding:60px 40px;
+.over-intro blockquote {
+  color: #fff;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  max-width: 680px;
+  margin: 0 auto;
 }
 
-.btw-toggle {
-  display:flex;
-  align-items:center;
-  gap:16px;
-  margin-bottom:32px;
-  font-size:0.95rem;
-  color:#555;
+.over-bio {
+  padding: 70px 40px;
+  background: #fff;
 }
 
-.btw-toggle label {
-  display:flex;
-  align-items:center;
-  gap:8px;
-  cursor:pointer;
+.over-bio-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
 }
 
-.btw-toggle input[type=radio] {
-  accent-color:#5a8a2e;
-  width:18px;
-  height:18px;
+.over-bio-inner img {
+  width: 320px;
+  flex-shrink: 0;
+  border-radius: 8px;
 }
 
-.tarieven-content table {
-  width:100%;
-  border-collapse:collapse;
-  font-size:0.95rem;
+.over-bio-text p {
+  color: #555;
+  font-size: 0.97rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
-thead tr {
-  background:#3a6b1e;
-  color:#fff;
-}
-
-thead th {
-  padding:14px 16px;
-  text-align:left;
-  font-weight:500;
-}
-
-tbody tr:nth-child(even) {
-  background:#f5f5f5;
-}
-
-tbody tr:nth-child(odd) {
-  background:#fff;
-}
-
-tbody td {
-  padding:13px 16px;
-  border-bottom:1px solid #e8e8e8;
-  color:#444;
-  vertical-align:top;
-}
-
-.noot {
-  margin-top:20px;
-  font-size:0.85rem;
-  color:#777;
-  line-height:1.7;
+@media(max-width:768px) {
+  .over-bio-inner { flex-direction: column; }
+  .over-bio-inner img { width: 100%; }
 }
 </style>
+
+<style>
+.page-hero {
+  background:#5a8a2e;
+  padding:30px 40px;
+  text-align:center;
+}
+.page-hero h2 {
+  font-weight:400;
+  font-size:2rem;
+  color:#fff;
+  margin-bottom:12px;
+}
+.page-hero p {
+  color:rgba(255,255,255,0.92);
+  font-size:1rem;
+  line-height:1.6;
+  max-width:700px;
+  margin:0 auto;
+}
+.page-body {
+  padding:60px 40px;
+  background:#fff;
+  max-width:900px;
+  margin:0 auto;
+}
+.page-body h3 {
+  font-size:1.3rem;
+  font-weight:500;
+  color:#3a6b1e;
+  margin:30px 0 12px;
+}
+.page-body h3:first-child { margin-top:0; }
+.page-body p {
+  color:#555;
+  font-size:0.97rem;
+  line-height:1.75;
+  margin-bottom:14px;
+}
+.page-body ul {
+  color:#555;
+  font-size:0.97rem;
+  line-height:1.9;
+  margin:0 0 14px 20px;
+}
+.page-cta {
+  text-align:center;
+  padding:50px 40px;
+  background:#3a6b1e;
+}
+.page-cta p {
+  color:#fff;
+  font-size:1.1rem;
+  max-width:650px;
+  margin:0 auto;
+  line-height:1.6;
+}
+</style>
+
 </head>
 <body>
 
@@ -269,11 +301,11 @@ tbody td {
   <a href="over-mij.html">Over mij</a>
   <a href="diensten.html">Diensten</a>
   <a href="portfolio.html">Portfolio</a>
-  <a href="tarieven.html" class="active">Tarieven</a>
+  <a href="tarieven.html">Tarieven</a>
   <a href="contact.html">Contact</a>
 </nav>
 
-<h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Tarieven klusjesman Haarlem</h1>
+<h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">IT diensten aan huis Haarlem</h1>
 
 <div class="header-top">
   <table>
@@ -284,61 +316,29 @@ tbody td {
   </table>
 </div>
 
-<section class="tarieven-hero">
-  <h2>"Weet waar je aan toe bent. Vooraf."</h2>
-  <p>Ik werk in principe overdag. Mochten we afspreken dat de avond of weekend beter uitkomt, dan hanteer ik dezelfde prijzen.</p>
+<section class="page-hero">
+  <h2>IT diensten</h2>
+  <p>Techniek in huis of op kantoor die niet doet wat hij moet doen? Daar helpt Mat je mee verder.</p>
 </section>
 
-<div class="tarieven-content">
+<section class="page-body">
 
-  <div class="btw-toggle">
-    <strong>Toon prijzen:</strong>
-    <label><input type="radio" name="btw" value="incl" checked onchange="toggleBtw(this)"> Inclusief BTW (particulier)</label>
-    <label><input type="radio" name="btw" value="excl" onchange="toggleBtw(this)"> Exclusief BTW (zakelijk)</label>
-  </div>
+<h3>28 jaar IT-ervaring, nu voor jouw huis of kantoor</h3>
+<p>Voordat ik klusjesman werd, werkte ik 28 jaar in de IT. Die achtergrond helpt je verder waar de meeste klusmannen afhaken: wifi die het niet doet, een laptop die vastloopt, of een printer die weigert.</p>
+<ul>
+<li>Wifi-dekking verbeteren met extra accesspoints</li>
+<li>Tv, thermostaat, deurbel, beveiligingscamera of slimme verlichting aansluiten</li>
+<li>Tablet, gameconsole of andere apparaten op het netwerk krijgen</li>
+<li>Hardware- en softwareproblemen oplossen op zowel Mac als Windows</li>
+<li>Laptop reparaties, van trage systemen tot hardware-defecten</li>
+</ul>
+<p>Geen callcenter, geen wachtrij: gewoon iemand die langskomt en het oplost.</p>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Omschrijving</th>
-        <th>Prijs</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Per uur</td>
-        <td><span class="incl">€ 65,00</span><span class="excl" style="display:none">€ 53,72</span></td>
-      </tr>
-      <tr>
-        <td>Halve dag</td>
-        <td><span class="incl">€ 250,00</span><span class="excl" style="display:none">€ 206,61</span></td>
-      </tr>
-      <tr>
-        <td>Per dag</td>
-        <td><span class="incl">€ 500,00</span><span class="excl" style="display:none">€ 413,22</span></td>
-      </tr>
-      <tr>
-        <td>Fixed prijs</td>
-        <td>Na offerte</td>
-      </tr>
-      <tr>
-        <td>Kosten reistijd (regio Kennemerland)</td>
-        <td><span class="incl">€ 0,00</span><span class="excl" style="display:none">€ 0,00</span> <small>(* zie opmerking)</small></td>
-      </tr>
-      <tr>
-        <td>Klein materiaal (schroeven, pluggen, spijkers, etc.)</td>
-        <td>Nacalculatie</td>
-      </tr>
-      <tr>
-        <td>Groot materiaal (hout, plaatmateriaal, verf, etc.)</td>
-        <td>In overleg</td>
-      </tr>
-    </tbody>
-  </table>
+</section>
 
-  <p class="noot">* Voor klussen korter dan een dagdeel en op meer dan 15 km vanaf vestigingsadres kan ik reiskostenvergoeding van € 15,00 in rekening brengen.</p>
-
-</div>
+<section class="page-cta">
+  <p>Wifi, smarthome of andere techniek die niet meewerkt? Neem contact op.</p>
+</section>
 
 <footer style="background:#f5f5f5;padding:28px 40px;text-align:center;border-top:1px solid #ddd;">
   <p style="color:#555;margin-bottom:8px;">Handymat Services &bull; Haarlem &amp; Kennemerland</p>
@@ -353,20 +353,6 @@ tbody td {
   </p>
   <p style="color:#999;font-size:0.82rem;">&copy; 2026 Handymat Services</p>
 </footer>
-
-<script>
-function toggleBtw(el) {
-  const incl = document.querySelectorAll('.incl');
-  const excl = document.querySelectorAll('.excl');
-  if (el.value === 'incl') {
-    incl.forEach(e => e.style.display = '');
-    excl.forEach(e => e.style.display = 'none');
-  } else {
-    incl.forEach(e => e.style.display = 'none');
-    excl.forEach(e => e.style.display = '');
-  }
-}
-</script>
 
 </body>
 </html>
