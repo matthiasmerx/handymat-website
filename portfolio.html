@@ -185,6 +185,15 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   font-style:italic;
 }
 
+.portfolio-intro {
+  text-align:center;
+  color:#666;
+  max-width:700px;
+  margin:0 auto;
+  padding:40px 40px 0;
+  line-height:1.7;
+}
+
 .portfolio-content {
   max-width:1000px;
   margin:0 auto;
@@ -245,7 +254,164 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 @media(max-width:600px) {
   .voor-na { grid-template-columns:1fr; }
 }
+
+/* PROJECT CARDS */
+.project-grid {
+  max-width:1100px;
+  margin:0 auto;
+  padding:60px 40px 70px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+}
+
+.project-card {
+  background:#fff;
+  border:1px solid #eee;
+  border-radius:10px;
+  overflow:hidden;
+  cursor:pointer;
+  text-align:left;
+  padding:0;
+  font-family:inherit;
+  display:block;
+  width:100%;
+  transition:box-shadow 0.2s, transform 0.2s;
+}
+
+.project-card:hover, .project-card:focus-visible {
+  box-shadow:0 8px 24px rgba(0,0,0,0.1);
+  transform:translateY(-2px);
+  outline:none;
+}
+
+.project-card:focus-visible {
+  outline:2px solid #5a9e3a;
+  outline-offset:2px;
+}
+
+.project-card img {
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  display:block;
+}
+
+.project-card-body {
+  padding:16px 18px 20px;
+}
+
+.project-card-body h2 {
+  font-size:1.05rem;
+  font-weight:500;
+  color:#3a6b1e;
+  margin-bottom:6px;
+}
+
+.project-card-teaser {
+  color:#777;
+  font-size:0.85rem;
+  line-height:1.6;
+}
+
+.project-card-cta {
+  display:inline-block;
+  margin-top:10px;
+  color:#5a9e3a;
+  font-size:0.82rem;
+  font-weight:500;
+}
+
+@media(max-width:900px) {
+  .project-grid { grid-template-columns:repeat(2,1fr); }
+}
+@media(max-width:600px) {
+  .project-grid { grid-template-columns:1fr; padding:40px 20px 50px; }
+}
+
+/* full project data, hidden until opened in modal */
+.project { display:none; }
+
+/* MODAL */
+.project-modal-overlay {
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(20,30,15,0.72);
+  z-index:1000;
+  padding:30px 16px;
+  overflow-y:auto;
+}
+
+.project-modal-overlay.open {
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+.project-modal {
+  background:#fff;
+  border-radius:12px;
+  max-width:800px;
+  width:100%;
+  margin:auto;
+  padding:40px;
+  position:relative;
+  animation:modal-in 0.18s ease-out;
+}
+
+@keyframes modal-in {
+  from { opacity:0; transform:translateY(10px); }
+  to { opacity:1; transform:translateY(0); }
+}
+
+.project-modal .project { display:block; margin:0; border:0; padding:0; }
+
+.project-modal-close {
+  position:absolute;
+  top:14px;
+  right:14px;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  border:none;
+  background:#f2f2f2;
+  color:#555;
+  font-size:1.3rem;
+  line-height:1;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.project-modal-close:hover { background:#e5e5e5; }
+
+@media(max-width:600px) {
+  .project-modal-overlay { padding:0; }
+  .project-modal { border-radius:0; min-height:100%; padding:28px 20px; }
+}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Handymat Services",
+  "image": "https://handymat.nl/images/logo.png",
+  "url": "https://handymat.nl/",
+  "telephone": "+31613432804",
+  "email": "info@handymat.nl",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Europaweg 1489",
+    "postalCode": "2035LA",
+    "addressLocality": "Haarlem",
+    "addressCountry": "NL"
+  },
+  "areaServed": ["Haarlem", "Heemstede", "Kennemerland", "Amsterdam"],
+  "priceRange": "€€"
+}
+</script>
 </head>
 <body>
 
@@ -273,9 +439,103 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   <h2>"Klein klusje of grote verbouwing, Mat regelt het."</h2>
 </section>
 
+<p class="portfolio-intro">Een greep uit de klussen die ik de afgelopen tijd heb uitgevoerd in Haarlem, Heemstede en omgeving. Van een lekkende kraan tot wandpanelen plaatsen, met af en toe een grotere verbouwing ertussen. Klik op een project voor de volledige foto's en het verhaal erachter.</p>
+
 <div class="portfolio-content">
 
-  <div class="project" itemscope itemtype="https://schema.org/HomeAndConstructionBusiness">
+  <div class="project-grid">
+    <button class="project-card" data-project="project-10">
+      <img src="images/plinten-heemstede.jpg" alt="Nieuwe houten plinten geplaatst Heemstede">
+      <div class="project-card-body">
+        <h2>Nieuwe plinten | Heemstede</h2>
+        <p class="project-card-teaser">Nieuwe houten plinten geplaatst in een woonhuis in Heemstede, voor een strakke afwerking rondom.</p>
+        <span class="project-card-cta">Bekijk klus &rarr;</span>
+      </div>
+    </button>
+
+    <button class="project-card" data-project="project-1">
+      <img src="images/keuken-na.jpg" alt="Nieuwe keuken geplaatst Haarlem">
+      <div class="project-card-body">
+        <h2>Nieuwe keuken | Heemstede</h2>
+        <p class="project-card-teaser">Van halfopen U-keuken naar een opstelling met schiereiland en bar.</p>
+        <span class="project-card-cta">Bekijk klus &rarr;</span>
+      </div>
+    </button>
+
+    <button class="project-card" data-project="project-2">
+      <img src="images/badkamer-na.jpg" alt="Nieuwe badkamer Haarlem">
+      <div class="project-card-body">
+        <h2>Nieuwe badkamer | Haarlem</h2>
+        <p class="project-card-teaser">Een ruim bad in een kleine ruimte, met slimme afvoerpositie.</p>
+        <span class="project-card-cta">Bekijk klus &rarr;</span>
+      </div>
+    </button>
+
+    <button class="project-card" data-project="project-3">
+      <img src="images/expansievat.jpg" alt="Nieuw expansievat geplaatst Haarlem">
+      <div class="project-card-body">
+        <h2>Expansievat vervangen | Haarlem</h2>
+        <p class="project-card-teaser">Wisselende waterdruk in de CV-installatie verholpen.</p>
+        <span class="project-card-cta">Bekijk klus &rarr;</span>
+      </div>
+    </button>
+
+    <button class="project-card" data-project="project-4">
+      <img src="images/schilderwerk-kantoor.jpg" alt="Kantoor schilderwerk Amsterdam gele wanden">
+      <div class="project-card-body">
+        <h2>Schilderwerk kantoor | Amsterdam</h2>
+        <p class="project-card-teaser">Kantoorwanden in de kleur van het eigen bedrijfslogo gezet.</p>
+        <span class="project-card-cta">Bekijk klus &rarr;</span>
+      </div>
+    </button>
+
+    <button class="project-card" data-project="project-5">
+      <img src="images/hrglas-na.jpg" alt="HR glas vervangen Haarlem nieuw glas geplaatst">
+      <div class="project-card-body">
+        <h2>HR++ glas vervangen | Haarlem</h2>
+        <p class="project-card-teaser">Doorslaand glas vervangen, weer 25 jaar vooruit.</p>
+        <span class="project-card-cta">Bekijk klus &rarr;</span>
+      </div>
+    </button>
+
+    <button class="project-card" data-project="project-6">
+      <img src="images/badkamer2-na.png" alt="Nieuwe inloopdouche bovenverdieping Haarlem">
+      <div class="project-card-body">
+        <h2>Complete verbouwing 2e etage | Haarlem</h2>
+        <p class="project-card-teaser">Volledige herindeling van de bovenverdieping van een pand uit 1905, met een ruime douche met zitgedeelte.</p>
+        <span class="project-card-cta">Bekijk klus &rarr;</span>
+      </div>
+    </button>
+
+    <button class="project-card" data-project="project-7">
+      <img src="images/terras-heemstede-na.png" alt="Gerenoveerd terras met composietvloer Heemstede">
+      <div class="project-card-body">
+        <h2>Terras renoveren | Heemstede</h2>
+        <p class="project-card-teaser">Verouderd terras omgetoverd tot moderne buitenkamer, met nieuwe composietvloer en frisse beplanting.</p>
+        <span class="project-card-cta">Bekijk klus &rarr;</span>
+      </div>
+    </button>
+
+    <button class="project-card" data-project="project-8">
+      <img src="images/balkon-haarlem-na.png" alt="Gerenoveerd balkon met houten vlonder Haarlem">
+      <div class="project-card-body">
+        <h2>Balkon renoveren | Haarlem</h2>
+        <p class="project-card-teaser">Verrot balkon vervangen door een verdiept, houten balkon met zelfgemaakt hout- en plantenscherm.</p>
+        <span class="project-card-cta">Bekijk klus &rarr;</span>
+      </div>
+    </button>
+
+    <button class="project-card" data-project="project-9">
+      <img src="images/trap-haarlem-na.png" alt="Gerenoveerde trap met overzettreden en traphekje Haarlem">
+      <div class="project-card-body">
+        <h2>Trap renoveren | Haarlem</h2>
+        <p class="project-card-teaser">Versleten trap vervangen door zelfgemaakte overzettreden en een op maat gemaakt traphekje.</p>
+        <span class="project-card-cta">Bekijk klus &rarr;</span>
+      </div>
+    </button>
+  </div>
+
+  <div class="project" id="project-1" itemscope itemtype="https://schema.org/HomeAndConstructionBusiness">
     <h2>Nieuwe keuken | Heemstede</h2>
     <p class="beschrijving">Deze eigenaresse in Heemstede wilde af van haar halfopen U-vormige keuken en koos voor een opstelling met een schiereiland. Eerst is de oude keuken gesloopt, inclusief een halfhoge muur, en zijn alle leidingen verlegd door ze in de vloer te frezen. Door de beperkte ruimte is gekozen voor een dieper aanrechtblad, wat meteen een bar opleverde waar met drie personen aan gegeten kan worden. De keuken is geleverd door Keuken Kampioen in Cruquius. Een keuken verbouwing in Heemstede laten uitvoeren? Handymat Services verzorgt keuken renovaties en keuken plaatsen in woningen en kleine kantoren in Kennemerland.</p>
     <div class="voor-na">
@@ -290,7 +550,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     </div>
   </div>
 
-  <div class="project">
+  <div class="project" id="project-2">
     <h2>Nieuwe badkamer | Haarlem</h2>
     <p class="beschrijving">De eigenaresse van deze woning had een duidelijke wens: een ruim bad. De badkamer zelf was zeer beperkt qua ruimte, daarom is gekozen voor een groot bad met de afvoer in het midden. Omdat de douche aan de kopse kant zit, sta je tijdens het douchen niet op die afvoer, een detail dat vaak over het hoofd wordt gezien. Doordat het budget beperkt was, heeft Handymat ook ondersteund bij het vinden van betaalbare tegels en badkamermeubilair. Badkamer renovatie of badkamer betegelen laten doen in Haarlem? Handymat Services voert badkamer verbouwingen uit in heel Kennemerland.</p>
     <div class="voor-na">
@@ -306,7 +566,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   </div>
 
 
-  <div class="project">
+  <div class="project" id="project-3">
     <h2>Expansievat vervangen | Haarlem</h2>
     <div class="tags">
       <span>Expansievat vervangen Haarlem</span>
@@ -323,7 +583,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   </div>
 
 
-  <div class="project">
+  <div class="project" id="project-4">
     <h2>Schilderwerk kantoor | Amsterdam</h2>
     <p class="beschrijving">Dit kantoor in Amsterdam werd deels opnieuw geverfd. De klant wilde een deel van de ruimte laten schilderen in de kleur van het eigen bedrijfslogo, een vrolijk geel dat de wanden meteen een herkenbare uitstraling geeft. Wanden en kozijnen zijn eerst gereinigd en waar nodig bijgewerkt, waarna alles strak in de gewenste kleur is gezet. Wanden schilderen laten doen in een kantoor of bedrijfsruimte in Amsterdam en omgeving? Handymat Services verzorgt schilderwerk in zowel woningen als kleine kantoren.</p>
     <div class="voor-na">
@@ -334,7 +594,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     </div>
   </div>
 
-  <div class="project">
+  <div class="project" id="project-5">
     <h2>HR++ glas vervangen | Haarlem</h2>
     <p class="beschrijving">Bij deze woning in Haarlem was het glas ooit in een te krap kozijn geplaatst, waardoor het glas begon door te slaan en ging lekken. Door een net iets kleinere glasmaat te plaatsen kan de klant weer minimaal 25 jaar vooruit. Doordat het glas nu op de juiste wijze is geplaatst, kan de klant bovendien in de toekomst een beroep doen op de lange garantie van de fabrikant, mocht dat ooit nodig zijn. Glas vervangen in Haarlem of omgeving? Handymat Services helpt in heel Kennemerland.</p>
     <div class="voor-na">
@@ -348,6 +608,77 @@ footer a:hover { color:rgba(255,255,255,0.75); }
       </figure>
     </div>
   </div>
+
+  <div class="project" id="project-6">
+    <h2>Complete verbouwing 2e etage | Haarlem</h2>
+    <p class="beschrijving">Bij deze woning in Haarlem is de volledige tweede verdieping strip-down gerenoveerd: alle binnenmuren zijn eruit gehaald en de indeling is helemaal opnieuw ontworpen. De badkamer kreeg een ruime douche met een eigen zitgedeelte. Bij een verdieping met een houten vloer- en plafondconstructie is vochtbeheersing cruciaal, te veel vocht tast op termijn de balken en de isolatie van het platte dak aan. Daarom is bewust gekozen voor stevige mechanische ventilatie, zodat de constructie droog blijft. Een verdieping of badkamer verbouwen in een oudere woning in Haarlem? Handymat Services denkt mee over zowel de indeling als de bouwkundige aandachtspunten die bij oudere panden horen.</p>
+    <div class="voor-na">
+      <figure>
+        <img src="images/badkamer2-voor.jpeg" alt="Douche in aanbouw bovenverdieping Haarlem">
+        <figcaption>Voor</figcaption>
+      </figure>
+      <figure>
+        <img src="images/badkamer2-na.png" alt="Nieuwe inloopdouche bovenverdieping Haarlem">
+        <figcaption>Na</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="project" id="project-7">
+    <h2>Terras renoveren | Heemstede</h2>
+    <p class="beschrijving">Dit terras in Heemstede had een opknapbeurt hard nodig: een grauwe, verweerde tegelvloer en dichtgegroeide, te grote beplanting die de ruimte klein maakten. De oude vloer is vervangen door een composietvloer, onderhoudsarm en jarenlang mooi zonder schilderwerk. De muren zijn grondig gereinigd en de plantenbak is opnieuw geschilderd, waardoor het geheel meteen fris oogt. De oude, te dominante planten zijn verwijderd en vervangen door nieuwe beplanting die beter bij de maat van het terras past. Het resultaat is een moderne buitenruimte die uitnodigt om te zitten. Terras renoveren of een composietvloer laten plaatsen in Heemstede of omgeving? Handymat Services helpt met de complete aanpak, van sloop tot een terras dat klaar is voor gebruik.</p>
+    <div class="voor-na">
+      <figure>
+        <img src="images/terras-heemstede-voor.jpg" alt="Terras voor renovatie Heemstede">
+        <figcaption>Voor</figcaption>
+      </figure>
+      <figure>
+        <img src="images/terras-heemstede-na.png" alt="Gerenoveerd terras met composietvloer Heemstede">
+        <figcaption>Na</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="project" id="project-8">
+    <h2>Balkon renoveren | Haarlem</h2>
+    <p class="beschrijving">Bij dit balkon in Haarlem waren de dragende balken op meerdere plekken verrot, duidelijk te zien aan het beschadigde hout en de doorgezakte planken. In plaats van alleen te repareren is gekozen voor een grondige aanpak: het balkon is 50 cm dieper gemaakt, waardoor er nu echt ruimte is voor een zitje in plaats van een smalle doorloopstrook. De rotte constructie is vervangen door een nieuwe, stevige onderconstructie met hardhouten vlonderplanken. Het oude, gedateerde ijzeren hek is vervangen door een zelfgemaakt houten scherm met latwerk, waar inmiddels een klimplant tegenop groeit voor extra privacy en groen. Het resultaat is een balkon dat van een verwaarloosde hoek is veranderd in een volwaardige buitenruimte. Balkon renoveren of een verrotte balkonvloer laten vervangen in Haarlem? Handymat Services pakt het van sloop tot afwerking op.</p>
+    <div class="voor-na">
+      <figure>
+        <img src="images/balkon-haarlem-voor.png" alt="Verrot balkon voor renovatie Haarlem">
+        <figcaption>Voor</figcaption>
+      </figure>
+      <figure>
+        <img src="images/balkon-haarlem-na.png" alt="Gerenoveerd balkon met houten vlonder Haarlem">
+        <figcaption>Na</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="project" id="project-9">
+    <h2>Trap renoveren | Haarlem</h2>
+    <p class="beschrijving">Deze trap in Haarlem maakte onderdeel uit van een grotere woonhuisrenovatie. De oude trap was afgeleefd, met versleten, donkere treden en tijdens de verbouwing kwam ook duidelijk zichtbaar hoeveel leidingwerk er achter de muur schuilging. In plaats van een compleet nieuwe trap is gekozen voor zelf op maat gemaakte overzettreden: lichte, houten treden die over de bestaande constructie heen zijn geplaatst. De zijkanten van de trap zijn zwart gemaakt, wat mooi contrasteert met het lichte hout. Ook het traphekje met balusters is zelf op maat gemaakt, in dezelfde zwarte kleur, en sluit aan bij de stalen deur met glasindeling verderop in de hal, waardoor de trap en de rest van de gang visueel één geheel vormen. Trap renoveren, overzettreden of een traphekje op maat laten maken in Haarlem? Handymat Services pakt dit soort klussen op, inclusief het bijbehorende leidingwerk.</p>
+    <div class="voor-na">
+      <figure>
+        <img src="images/trap-haarlem-voor.png" alt="Oude trap voor renovatie met leidingwerk Haarlem">
+        <figcaption>Voor</figcaption>
+      </figure>
+      <figure>
+        <img src="images/trap-haarlem-na.png" alt="Gerenoveerde trap met overzettreden en traphekje Haarlem">
+        <figcaption>Na</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="project" id="project-10">
+    <h2>Nieuwe plinten | Heemstede</h2>
+    <p class="beschrijving">In deze woning in Heemstede zijn nieuwe houten plinten geplaatst, inclusief de lastigere hoeken rondom de haard. Plinten laten plaatsen of vervangen in Heemstede of omgeving? Handymat Services verzorgt dit soort afwerkingsklussen.</p>
+    <div class="voor-na">
+      <figure>
+        <img src="images/plinten-heemstede.jpg" alt="Nieuwe houten plinten geplaatst Heemstede">
+        <figcaption>Nieuwe plinten geplaatst</figcaption>
+      </figure>
+    </div>
+  </div>
 </div>
 
 <footer style="background:#f5f5f5;padding:28px 40px;text-align:center;border-top:1px solid #ddd;">
@@ -357,12 +688,64 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <a href="mailto:info@handymat.nl" style="color:#555;text-decoration:none;margin:0 10px;">info@handymat.nl</a>
   </p>
   <p style="margin-bottom:8px;">
-    <a href="#" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
-    <a href="#" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
-    <a href="#" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
+    <a href="algemene-voorwaarden-consument.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
+    <a href="algemene-voorwaarden-zakelijk.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
+    <a href="privacy.html" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
   </p>
   <p style="color:#999;font-size:0.82rem;">&copy; 2026 Handymat Services</p>
 </footer>
+
+<div class="project-modal-overlay" id="project-modal-overlay">
+  <div class="project-modal" role="dialog" aria-modal="true">
+    <button class="project-modal-close" id="project-modal-close" aria-label="Sluiten">&times;</button>
+    <div id="project-modal-body"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var overlay = document.getElementById('project-modal-overlay');
+  var modalBody = document.getElementById('project-modal-body');
+  var closeBtn = document.getElementById('project-modal-close');
+  var cards = document.querySelectorAll('.project-card');
+  var lastTrigger = null;
+
+  function openProject(id) {
+    var source = document.getElementById(id);
+    if (!source) return;
+    modalBody.innerHTML = '';
+    modalBody.appendChild(source);
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+
+  function closeModal() {
+    var openProjectEl = modalBody.querySelector('.project');
+    if (openProjectEl) {
+      document.querySelector('.portfolio-content').appendChild(openProjectEl);
+    }
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (lastTrigger) lastTrigger.focus();
+  }
+
+  cards.forEach(function(card) {
+    card.addEventListener('click', function() {
+      lastTrigger = card;
+      openProject(card.getAttribute('data-project'));
+    });
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeModal();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && overlay.classList.contains('open')) closeModal();
+  });
+})();
+</script>
 
 </body>
 </html>
