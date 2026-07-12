@@ -109,9 +109,9 @@ body { margin:0; }
 }
 
 @media(max-width:768px){
-  .header-top { padding:16px 20px; }
-  .header-top table, .header-top table tr, .header-top table td { display:block; width:100%; text-align:center; }
-  .header-top table td { padding:4px 0; }
+  .header-top { padding:16px 20px; display:flex; flex-direction:column; align-items:center; }
+  .header-top table, .header-top table tbody, .header-top table tr { display:contents; }
+  .header-top table td { display:block; text-align:center; padding:4px 0; }
   .header-top table td img { width:200px; margin:0 auto; }
   .header-nav a { padding:10px 16px; font-size:0.85rem; }
 }
@@ -133,7 +133,7 @@ body { margin:0; }
 <div class="header-top">
   <table>
     <tr>
-      <td><img src="images/logo.png" alt="Handymat Services logo"></td>
+      <td><img src="images/logo.png" alt="Handymat Services logo" width="600" height="306"></td>
       <td><p style="font-family:'Roboto',Arial,sans-serif;font-weight:300;font-size:2.2rem;color:#5a8a2e;line-height:1;">Klussen en<br>renovatie</p></td>
     </tr>
   </table>
@@ -232,7 +232,7 @@ body { margin:0; }
   <p style="margin-bottom:8px;">
     <a href="algemene-voorwaarden-consument.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
     <a href="algemene-voorwaarden-zakelijk.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
-    <a href="#" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
+    <a href="privacy.html" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
   </p>
   <p style="color:#999;font-size:0.82rem;">&copy; 2026 Handymat Services</p>
 </footer>

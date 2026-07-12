@@ -160,9 +160,9 @@ footer a { color:rgba(255,255,255,0.45); text-decoration:none; margin:0 10px; }
 footer a:hover { color:rgba(255,255,255,0.75); }
 
 @media(max-width:768px){
-  .header-top { padding:16px 20px; }
-  .header-top table, .header-top table tr, .header-top table td { display:block; width:100%; text-align:center; }
-  .header-top table td { padding:4px 0; }
+  .header-top { padding:16px 20px; display:flex; flex-direction:column; align-items:center; }
+  .header-top table, .header-top table tbody, .header-top table tr { display:contents; }
+  .header-top table td { display:block; text-align:center; padding:4px 0; }
   .header-top table td img { width:200px; margin:0 auto; }
   .header-top table td h1 { font-size:1.5rem; }
   .header-nav a { padding:10px 16px; font-size:0.85rem; }
@@ -429,7 +429,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 <div class="header-top">
   <table>
     <tr>
-      <td><img src="images/logo.png" alt="Handymat Services logo"></td>
+      <td><img src="images/logo.png" alt="Handymat Services logo" width="600" height="306"></td>
       <td><p style="font-family:'Roboto',Arial,sans-serif;font-weight:300;font-size:2.2rem;color:#5a8a2e;line-height:1;">Klussen en<br>renovatie</p></td>
     </tr>
   </table>
@@ -535,7 +535,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     </button>
   </div>
 
-  <div class="project" id="project-1" itemscope itemtype="https://schema.org/HomeAndConstructionBusiness">
+  <div class="project" id="project-1">
     <h2>Nieuwe keuken | Heemstede</h2>
     <p class="beschrijving">Deze eigenaresse in Heemstede wilde af van haar halfopen U-vormige keuken en koos voor een opstelling met een schiereiland. Eerst is de oude keuken gesloopt, inclusief een halfhoge muur, en zijn alle leidingen verlegd door ze in de vloer te frezen. Door de beperkte ruimte is gekozen voor een dieper aanrechtblad, wat meteen een bar opleverde waar met drie personen aan gegeten kan worden. De keuken is geleverd door Keuken Kampioen in Cruquius. Een keuken verbouwing in Heemstede laten uitvoeren? Handymat Services verzorgt keuken renovaties en keuken plaatsen in woningen en kleine kantoren in Kennemerland.</p>
     <div class="voor-na">
