@@ -1,2 +1,7 @@
 # Local Netlify folder
 .netlify
+
+.claude/
+claude-seo/
+LOCAL-SEO-ANALYSIS-handymat.nl.md
+SEO-AUDIT-handymat.nl.md
