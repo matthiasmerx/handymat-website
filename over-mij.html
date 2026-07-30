@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Over mij | Handymat Services Haarlem</title>
+<link rel="canonical" href="https://handymat.nl/over-mij">
 <meta name="description" content="Mat Merx, klusbedrijf Handymat Services in Haarlem. 28 jaar IT-ervaring gecombineerd met een passie voor klussen.">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -165,7 +166,8 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   .header-top table td { display:block; text-align:center; padding:4px 0; }
   .header-top table td img { width:200px; margin:0 auto; }
   .header-top table td h1 { font-size:1.5rem; }
-  .header-nav a { padding:10px 16px; font-size:0.85rem; }
+  .header-nav { display:flex; justify-content:center; }
+  .header-nav a { padding:10px 8px; font-size:0.75rem; white-space:nowrap; }
   .diensten-grid { grid-template-columns:1fr; } 
   
   
@@ -250,6 +252,17 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     "addressLocality": "Haarlem",
     "addressCountry": "NL"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.3621216,
+    "longitude": 4.6522178
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  },
   "areaServed": ["Haarlem", "Heemstede", "Kennemerland", "Amsterdam"],
   "priceRange": "€€"
 }
@@ -258,12 +271,12 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 <body>
 
 <nav class="header-nav">
-  <a href="index.html">Home</a>
-  <a href="over-mij.html" class="active">Over mij</a>
-  <a href="diensten.html">Diensten</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="tarieven.html">Tarieven</a>
-  <a href="contact.html">Contact</a>
+  <a href="/">Home</a>
+  <a href="over-mij" class="active">Over mij</a>
+  <a href="diensten">Diensten</a>
+  <a href="portfolio">Portfolio</a>
+  <a href="tarieven">Tarieven</a>
+  <a href="contact">Contact</a>
 </nav>
 
 <h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Over Mat Merx klusjesman Haarlem</h1>
@@ -285,7 +298,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 
 <section class="over-bio">
   <div class="over-bio-inner">
-    <img src="images/mat-merx.jpg" alt="Mat Merx, Handymat Services">
+    <img src="images/mat-merx.jpg" alt="Mat Merx, Handymat Services" width="600" height="800">
     <div class="over-bio-text">
       <p>Bij mij weet je waar je aan toe bent. Je krijgt een eerlijke inschatting vooraf, ik kom op het afgesproken tijdstip, en als er iets verandert hoor je dat van mij. Daar hoort ook een heldere factuur bij, een duidelijke afspraak over wat er wel en niet in de prijs zit, en transparante communicatie als er tijdens de klus iets bijkomt.</p>
       <p>Ik werk met plezier: handen uit de mouwen, problemen oplossen, mooie dingen maken en resultaat zien. Wanneer een klus om extra handen vraagt, bij zwaar werk of zeer specialistische onderdelen, schakel ik gericht hulp in. Ik neem alleen klussen aan waarvan ik weet dat ik ze goed kan afleveren, en waarvan ik vooraf kan inschatten hoeveel werk en tijd het kost.</p>
@@ -300,9 +313,9 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <a href="mailto:info@handymat.nl" style="color:#555;text-decoration:none;margin:0 10px;">info@handymat.nl</a>
   </p>
   <p style="margin-bottom:8px;">
-    <a href="algemene-voorwaarden-consument.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
-    <a href="algemene-voorwaarden-zakelijk.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
-    <a href="privacy.html" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
+    <a href="algemene-voorwaarden-consument" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
+    <a href="algemene-voorwaarden-zakelijk" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
+    <a href="privacy" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
   </p>
   <p style="color:#999;font-size:0.82rem;">&copy; 2026 Handymat Services</p>
 </footer>

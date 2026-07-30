@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Diensten | Handymat Services Haarlem &amp; Kennemerland</title>
+<link rel="canonical" href="https://handymat.nl/diensten">
 <meta name="description" content="Handymat Services: klein onderhoud en kleine renovaties in badkamer, keuken en huis. Ook vast aanspreekpunt voor huurdersklussen en vastgoedbeheerders in Haarlem, Kennemerland en Amsterdam.">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -165,7 +166,8 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   .header-top table td { display:block; text-align:center; padding:4px 0; }
   .header-top table td img { width:200px; margin:0 auto; }
   .header-top table td h1 { font-size:1.5rem; }
-  .header-nav a { padding:10px 16px; font-size:0.85rem; }
+  .header-nav { display:flex; justify-content:center; }
+  .header-nav a { padding:10px 8px; font-size:0.75rem; white-space:nowrap; }
   .diensten-grid { grid-template-columns:1fr; } 
   
   
@@ -344,6 +346,17 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     "addressLocality": "Haarlem",
     "addressCountry": "NL"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.3621216,
+    "longitude": 4.6522178
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  },
   "areaServed": ["Haarlem", "Heemstede", "Kennemerland", "Amsterdam"],
   "priceRange": "€€"
 }
@@ -352,12 +365,12 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 <body>
 
 <nav class="header-nav">
-  <a href="index.html">Home</a>
-  <a href="over-mij.html">Over mij</a>
-  <a href="diensten.html" class="active">Diensten</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="tarieven.html">Tarieven</a>
-  <a href="contact.html">Contact</a>
+  <a href="/">Home</a>
+  <a href="over-mij">Over mij</a>
+  <a href="diensten" class="active">Diensten</a>
+  <a href="portfolio">Portfolio</a>
+  <a href="tarieven">Tarieven</a>
+  <a href="contact">Contact</a>
 </nav>
 
 <h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Diensten klusjesman Haarlem</h1>
@@ -430,17 +443,17 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   <div class="dienst-cards">
 
     <div class="dienst-card">
-      <h3><a href="verhuurders-vastgoed.html" style="color:#3a6b1e;text-decoration:none;">Verhuurders &amp; vastgoedbeheer</a></h3>
+      <h3><a href="verhuurders-vastgoed" style="color:#3a6b1e;text-decoration:none;">Verhuurders &amp; vastgoedbeheer</a></h3>
       <p class="wel">Vast aanspreekpunt voor mutatieonderhoud, reparaties en oplevering van huurwoningen.</p>
     </div>
 
     <div class="dienst-card">
-      <h3><a href="it-diensten.html" style="color:#3a6b1e;text-decoration:none;">IT diensten</a></h3>
+      <h3><a href="it-diensten" style="color:#3a6b1e;text-decoration:none;">IT diensten</a></h3>
       <p class="wel">Wifi, smarthome, laptop reparaties en hardware/software problemen op Mac en Windows, opgelost met 28 jaar IT-ervaring.</p>
     </div>
 
     <div class="dienst-card">
-      <h3><a href="wandpanelen.html" style="color:#3a6b1e;text-decoration:none;">Wandpanelen plaatsen</a></h3>
+      <h3><a href="wandpanelen" style="color:#3a6b1e;text-decoration:none;">Wandpanelen plaatsen</a></h3>
       <p class="wel">Muur opfrissen met wandpanelen over bestaande tegels of muur, zonder sloopwerk. Voor badkamer, gang en andere ruimtes.</p>
     </div>
 
@@ -458,9 +471,9 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <a href="mailto:info@handymat.nl" style="color:#555;text-decoration:none;margin:0 10px;">info@handymat.nl</a>
   </p>
   <p style="margin-bottom:8px;">
-    <a href="algemene-voorwaarden-consument.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
-    <a href="algemene-voorwaarden-zakelijk.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
-    <a href="privacy.html" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
+    <a href="algemene-voorwaarden-consument" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
+    <a href="algemene-voorwaarden-zakelijk" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
+    <a href="privacy" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
   </p>
   <p style="color:#999;font-size:0.82rem;">&copy; 2026 Handymat Services</p>
 </footer>

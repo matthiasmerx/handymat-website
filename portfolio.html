@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio | Handymat Services Haarlem</title>
+<link rel="canonical" href="https://handymat.nl/portfolio">
 <meta name="description" content="Bekijk uitgevoerde klussen van Handymat Services in Haarlem. Badkamer renovatie, keuken verbouwing en meer. Voor en na foto's.">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -165,7 +166,8 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   .header-top table td { display:block; text-align:center; padding:4px 0; }
   .header-top table td img { width:200px; margin:0 auto; }
   .header-top table td h1 { font-size:1.5rem; }
-  .header-nav a { padding:10px 16px; font-size:0.85rem; }
+  .header-nav { display:flex; justify-content:center; }
+  .header-nav a { padding:10px 8px; font-size:0.75rem; white-space:nowrap; }
   .diensten-grid { grid-template-columns:1fr; } 
   
   
@@ -408,6 +410,17 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     "addressLocality": "Haarlem",
     "addressCountry": "NL"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.3621216,
+    "longitude": 4.6522178
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  },
   "areaServed": ["Haarlem", "Heemstede", "Kennemerland", "Amsterdam"],
   "priceRange": "€€"
 }
@@ -416,12 +429,12 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 <body>
 
 <nav class="header-nav">
-  <a href="index.html">Home</a>
-  <a href="over-mij.html">Over mij</a>
-  <a href="diensten.html">Diensten</a>
-  <a href="portfolio.html" class="active">Portfolio</a>
-  <a href="tarieven.html">Tarieven</a>
-  <a href="contact.html">Contact</a>
+  <a href="/">Home</a>
+  <a href="over-mij">Over mij</a>
+  <a href="diensten">Diensten</a>
+  <a href="portfolio" class="active">Portfolio</a>
+  <a href="tarieven">Tarieven</a>
+  <a href="contact">Contact</a>
 </nav>
 
 <h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Portfolio klusjesman Haarlem</h1>
@@ -445,7 +458,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 
   <div class="project-grid">
     <button class="project-card" data-project="project-10">
-      <img src="images/plinten-heemstede.jpg" alt="Nieuwe houten plinten geplaatst Heemstede">
+      <img src="images/plinten-heemstede.jpg" alt="Nieuwe houten plinten geplaatst Heemstede" width="1200" height="1600">
       <div class="project-card-body">
         <h2>Nieuwe plinten | Heemstede</h2>
         <p class="project-card-teaser">Nieuwe houten plinten geplaatst in een woonhuis in Heemstede, voor een strakke afwerking rondom.</p>
@@ -454,7 +467,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     </button>
 
     <button class="project-card" data-project="project-1">
-      <img src="images/keuken-na.jpg" alt="Nieuwe keuken geplaatst Haarlem">
+      <img src="images/keuken-na.jpg" alt="Nieuwe keuken geplaatst Haarlem" width="470" height="515">
       <div class="project-card-body">
         <h2>Nieuwe keuken | Heemstede</h2>
         <p class="project-card-teaser">Van halfopen U-keuken naar een opstelling met schiereiland en bar.</p>
@@ -463,7 +476,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     </button>
 
     <button class="project-card" data-project="project-2">
-      <img src="images/badkamer-na.jpg" alt="Nieuwe badkamer Haarlem">
+      <img src="images/badkamer-na.jpg" alt="Nieuwe badkamer Haarlem" width="376" height="407">
       <div class="project-card-body">
         <h2>Nieuwe badkamer | Haarlem</h2>
         <p class="project-card-teaser">Een ruim bad in een kleine ruimte, met slimme afvoerpositie.</p>
@@ -472,7 +485,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     </button>
 
     <button class="project-card" data-project="project-3">
-      <img src="images/expansievat.jpg" alt="Nieuw expansievat geplaatst Haarlem">
+      <img src="images/expansievat.jpg" alt="Nieuw expansievat geplaatst Haarlem" width="600" height="800">
       <div class="project-card-body">
         <h2>Expansievat vervangen | Haarlem</h2>
         <p class="project-card-teaser">Wisselende waterdruk in de CV-installatie verholpen.</p>
@@ -481,7 +494,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     </button>
 
     <button class="project-card" data-project="project-4">
-      <img src="images/schilderwerk-kantoor.jpg" alt="Kantoor schilderwerk Amsterdam gele wanden">
+      <img src="images/schilderwerk-kantoor.jpg" alt="Kantoor schilderwerk Amsterdam gele wanden" width="600" height="800">
       <div class="project-card-body">
         <h2>Schilderwerk kantoor | Amsterdam</h2>
         <p class="project-card-teaser">Kantoorwanden in de kleur van het eigen bedrijfslogo gezet.</p>
@@ -490,7 +503,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     </button>
 
     <button class="project-card" data-project="project-5">
-      <img src="images/hrglas-na.jpg" alt="HR glas vervangen Haarlem nieuw glas geplaatst">
+      <img src="images/hrglas-na.jpg" alt="HR glas vervangen Haarlem nieuw glas geplaatst" width="506" height="900">
       <div class="project-card-body">
         <h2>HR++ glas vervangen | Haarlem</h2>
         <p class="project-card-teaser">Doorslaand glas vervangen, weer 25 jaar vooruit.</p>
@@ -499,7 +512,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     </button>
 
     <button class="project-card" data-project="project-6">
-      <img src="images/badkamer2-na.png" alt="Nieuwe inloopdouche bovenverdieping Haarlem">
+      <img src="images/badkamer2-na.png" alt="Nieuwe inloopdouche bovenverdieping Haarlem" width="507" height="697">
       <div class="project-card-body">
         <h2>Complete verbouwing 2e etage | Haarlem</h2>
         <p class="project-card-teaser">Volledige herindeling van de bovenverdieping van een pand uit 1905, met een ruime douche met zitgedeelte.</p>
@@ -508,7 +521,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     </button>
 
     <button class="project-card" data-project="project-7">
-      <img src="images/terras-heemstede-na.png" alt="Gerenoveerd terras met composietvloer Heemstede">
+      <img src="images/terras-heemstede-na.png" alt="Gerenoveerd terras met composietvloer Heemstede" width="900" height="1600">
       <div class="project-card-body">
         <h2>Terras renoveren | Heemstede</h2>
         <p class="project-card-teaser">Verouderd terras omgetoverd tot moderne buitenkamer, met nieuwe composietvloer en frisse beplanting.</p>
@@ -517,7 +530,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     </button>
 
     <button class="project-card" data-project="project-8">
-      <img src="images/balkon-haarlem-na.png" alt="Gerenoveerd balkon met houten vlonder Haarlem">
+      <img src="images/balkon-haarlem-na.png" alt="Gerenoveerd balkon met houten vlonder Haarlem" width="345" height="461">
       <div class="project-card-body">
         <h2>Balkon renoveren | Haarlem</h2>
         <p class="project-card-teaser">Verrot balkon vervangen door een verdiept, houten balkon met zelfgemaakt hout- en plantenscherm.</p>
@@ -526,7 +539,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     </button>
 
     <button class="project-card" data-project="project-9">
-      <img src="images/trap-haarlem-na.png" alt="Gerenoveerde trap met overzettreden en traphekje Haarlem">
+      <img src="images/trap-haarlem-na.png" alt="Gerenoveerde trap met overzettreden en traphekje Haarlem" width="425" height="566">
       <div class="project-card-body">
         <h2>Trap renoveren | Haarlem</h2>
         <p class="project-card-teaser">Versleten trap vervangen door zelfgemaakte overzettreden en een op maat gemaakt traphekje.</p>
@@ -535,7 +548,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     </button>
 
     <button class="project-card" data-project="project-11">
-      <img src="images/zolder-halfweg-kaart.png" alt="Open zolder gesplitst in 2 slaapkamers Halfweg">
+      <img src="images/zolder-halfweg-kaart.png" alt="Open zolder gesplitst in 2 slaapkamers Halfweg" width="521" height="393">
       <div class="project-card-body">
         <h2>Open zolder splitsen in 2 slaapkamers | Halfweg</h2>
         <p class="project-card-teaser">Open zolder omgebouwd tot 2 volwaardige slaapkamers, met extra aandacht voor isolatie.</p>
@@ -549,11 +562,11 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <p class="beschrijving">Deze eigenaresse in Heemstede wilde af van haar halfopen U-vormige keuken en koos voor een opstelling met een schiereiland. Eerst is de oude keuken gesloopt, inclusief een halfhoge muur, en zijn alle leidingen verlegd door ze in de vloer te frezen. Door de beperkte ruimte is gekozen voor een dieper aanrechtblad, wat meteen een bar opleverde waar met drie personen aan gegeten kan worden. De keuken is geleverd door Keuken Kampioen in Cruquius. Een keuken verbouwing in Heemstede laten uitvoeren? Handymat Services verzorgt keuken renovaties en keuken plaatsen in woningen en kleine kantoren in Kennemerland.</p>
     <div class="voor-na">
       <figure>
-        <img src="images/keuken-voor.jpg" alt="Keuken voor renovatie Haarlem">
+        <img src="images/keuken-voor.jpg" alt="Keuken voor renovatie Haarlem" width="730" height="800">
         <figcaption>Voor</figcaption>
       </figure>
       <figure>
-        <img src="images/keuken-na.jpg" alt="Nieuwe keuken geplaatst Haarlem">
+        <img src="images/keuken-na.jpg" alt="Nieuwe keuken geplaatst Haarlem" width="470" height="515">
         <figcaption>Na</figcaption>
       </figure>
     </div>
@@ -564,11 +577,11 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <p class="beschrijving">De eigenaresse van deze woning had een duidelijke wens: een ruim bad. De badkamer zelf was zeer beperkt qua ruimte, daarom is gekozen voor een groot bad met de afvoer in het midden. Omdat de douche aan de kopse kant zit, sta je tijdens het douchen niet op die afvoer, een detail dat vaak over het hoofd wordt gezien. Doordat het budget beperkt was, heeft Handymat ook ondersteund bij het vinden van betaalbare tegels en badkamermeubilair. Badkamer renovatie of badkamer betegelen laten doen in Haarlem? Handymat Services voert badkamer verbouwingen uit in heel Kennemerland.</p>
     <div class="voor-na">
       <figure>
-        <img src="images/badkamer-voor.jpg" alt="Badkamer voor renovatie Haarlem">
+        <img src="images/badkamer-voor.jpg" alt="Badkamer voor renovatie Haarlem" width="292" height="317">
         <figcaption>Voor</figcaption>
       </figure>
       <figure>
-        <img src="images/badkamer-na.jpg" alt="Nieuwe badkamer Haarlem">
+        <img src="images/badkamer-na.jpg" alt="Nieuwe badkamer Haarlem" width="376" height="407">
         <figcaption>Na</figcaption>
       </figure>
     </div>
@@ -585,7 +598,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <p class="beschrijving">Bij deze woning in Haarlem was het expansievat van de CV installatie aan vervanging toe. Een versleten of te klein expansievat kan leiden tot een wisselende waterdruk in de installatie. Het oude vat is verwijderd en vervangen door een nieuw exemplaar, passend bij de installatie. Expansievat vervangen of andere kleine klussen rond de installatie in Haarlem? Handymat Services helpt in heel Kennemerland.</p>
     <div class="voor-na">
       <figure>
-        <img src="images/expansievat.jpg" alt="Expansievat vervangen CV installatie Haarlem">
+        <img src="images/expansievat.jpg" alt="Expansievat vervangen CV installatie Haarlem" width="600" height="800">
         <figcaption>Nieuw expansievat geplaatst</figcaption>
       </figure>
     </div>
@@ -597,7 +610,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <p class="beschrijving">Dit kantoor in Amsterdam werd deels opnieuw geverfd. De klant wilde een deel van de ruimte laten schilderen in de kleur van het eigen bedrijfslogo, een vrolijk geel dat de wanden meteen een herkenbare uitstraling geeft. Wanden en kozijnen zijn eerst gereinigd en waar nodig bijgewerkt, waarna alles strak in de gewenste kleur is gezet. Wanden schilderen laten doen in een kantoor of bedrijfsruimte in Amsterdam en omgeving? Handymat Services verzorgt schilderwerk in zowel woningen als kleine kantoren.</p>
     <div class="voor-na">
       <figure>
-        <img src="images/schilderwerk-kantoor.jpg" alt="Kantoor schilderwerk Amsterdam gele wanden">
+        <img src="images/schilderwerk-kantoor.jpg" alt="Kantoor schilderwerk Amsterdam gele wanden" width="600" height="800">
         <figcaption>Resultaat</figcaption>
       </figure>
     </div>
@@ -608,11 +621,11 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <p class="beschrijving">Bij deze woning in Haarlem was het glas ooit in een te krap kozijn geplaatst, waardoor het glas begon door te slaan en ging lekken. Door een net iets kleinere glasmaat te plaatsen kan de klant weer minimaal 25 jaar vooruit. Doordat het glas nu op de juiste wijze is geplaatst, kan de klant bovendien in de toekomst een beroep doen op de lange garantie van de fabrikant, mocht dat ooit nodig zijn. Glas vervangen in Haarlem of omgeving? Handymat Services helpt in heel Kennemerland.</p>
     <div class="voor-na">
       <figure>
-        <img src="images/hrglas-voor.jpg" alt="HR glas vervangen Haarlem oude situatie">
+        <img src="images/hrglas-voor.jpg" alt="HR glas vervangen Haarlem oude situatie" width="506" height="900">
         <figcaption>Voor</figcaption>
       </figure>
       <figure>
-        <img src="images/hrglas-na.jpg" alt="HR glas vervangen Haarlem nieuw glas geplaatst">
+        <img src="images/hrglas-na.jpg" alt="HR glas vervangen Haarlem nieuw glas geplaatst" width="506" height="900">
         <figcaption>Na</figcaption>
       </figure>
     </div>
@@ -623,11 +636,11 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <p class="beschrijving">Bij deze woning in Haarlem is de volledige tweede verdieping strip-down gerenoveerd: alle binnenmuren zijn eruit gehaald en de indeling is helemaal opnieuw ontworpen. De badkamer kreeg een ruime douche met een eigen zitgedeelte. Bij een verdieping met een houten vloer- en plafondconstructie is vochtbeheersing cruciaal, te veel vocht tast op termijn de balken en de isolatie van het platte dak aan. Daarom is bewust gekozen voor stevige mechanische ventilatie, zodat de constructie droog blijft. Een verdieping of badkamer verbouwen in een oudere woning in Haarlem? Handymat Services denkt mee over zowel de indeling als de bouwkundige aandachtspunten die bij oudere panden horen.</p>
     <div class="voor-na">
       <figure>
-        <img src="images/badkamer2-voor.jpeg" alt="Douche in aanbouw bovenverdieping Haarlem">
+        <img src="images/badkamer2-voor.jpeg" alt="Douche in aanbouw bovenverdieping Haarlem" width="1200" height="1600">
         <figcaption>Voor</figcaption>
       </figure>
       <figure>
-        <img src="images/badkamer2-na.png" alt="Nieuwe inloopdouche bovenverdieping Haarlem">
+        <img src="images/badkamer2-na.png" alt="Nieuwe inloopdouche bovenverdieping Haarlem" width="507" height="697">
         <figcaption>Na</figcaption>
       </figure>
     </div>
@@ -638,11 +651,11 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <p class="beschrijving">Dit terras in Heemstede had een opknapbeurt hard nodig: een grauwe, verweerde tegelvloer en dichtgegroeide, te grote beplanting die de ruimte klein maakten. De oude vloer is vervangen door een composietvloer, onderhoudsarm en jarenlang mooi zonder schilderwerk. De muren zijn grondig gereinigd en de plantenbak is opnieuw geschilderd, waardoor het geheel meteen fris oogt. De oude, te dominante planten zijn verwijderd en vervangen door nieuwe beplanting die beter bij de maat van het terras past. Het resultaat is een moderne buitenruimte die uitnodigt om te zitten. Terras renoveren of een composietvloer laten plaatsen in Heemstede of omgeving? Handymat Services helpt met de complete aanpak, van sloop tot een terras dat klaar is voor gebruik.</p>
     <div class="voor-na">
       <figure>
-        <img src="images/terras-heemstede-voor.jpg" alt="Terras voor renovatie Heemstede">
+        <img src="images/terras-heemstede-voor.jpg" alt="Terras voor renovatie Heemstede" width="900" height="1600">
         <figcaption>Voor</figcaption>
       </figure>
       <figure>
-        <img src="images/terras-heemstede-na.png" alt="Gerenoveerd terras met composietvloer Heemstede">
+        <img src="images/terras-heemstede-na.png" alt="Gerenoveerd terras met composietvloer Heemstede" width="900" height="1600">
         <figcaption>Na</figcaption>
       </figure>
     </div>
@@ -653,11 +666,11 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <p class="beschrijving">Bij dit balkon in Haarlem waren de dragende balken op meerdere plekken verrot, duidelijk te zien aan het beschadigde hout en de doorgezakte planken. In plaats van alleen te repareren is gekozen voor een grondige aanpak: het balkon is 50 cm dieper gemaakt, waardoor er nu echt ruimte is voor een zitje in plaats van een smalle doorloopstrook. De rotte constructie is vervangen door een nieuwe, stevige onderconstructie met hardhouten vlonderplanken. Het oude, gedateerde ijzeren hek is vervangen door een zelfgemaakt houten scherm met latwerk, waar inmiddels een klimplant tegenop groeit voor extra privacy en groen. Het resultaat is een balkon dat van een verwaarloosde hoek is veranderd in een volwaardige buitenruimte. Balkon renoveren of een verrotte balkonvloer laten vervangen in Haarlem? Handymat Services pakt het van sloop tot afwerking op.</p>
     <div class="voor-na">
       <figure>
-        <img src="images/balkon-haarlem-voor.png" alt="Verrot balkon voor renovatie Haarlem">
+        <img src="images/balkon-haarlem-voor.png" alt="Verrot balkon voor renovatie Haarlem" width="337" height="372">
         <figcaption>Voor</figcaption>
       </figure>
       <figure>
-        <img src="images/balkon-haarlem-na.png" alt="Gerenoveerd balkon met houten vlonder Haarlem">
+        <img src="images/balkon-haarlem-na.png" alt="Gerenoveerd balkon met houten vlonder Haarlem" width="345" height="461">
         <figcaption>Na</figcaption>
       </figure>
     </div>
@@ -668,11 +681,11 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <p class="beschrijving">Deze trap in Haarlem maakte onderdeel uit van een grotere woonhuisrenovatie. De oude trap was afgeleefd, met versleten, donkere treden en tijdens de verbouwing kwam ook duidelijk zichtbaar hoeveel leidingwerk er achter de muur schuilging. In plaats van een compleet nieuwe trap is gekozen voor zelf op maat gemaakte overzettreden: lichte, houten treden die over de bestaande constructie heen zijn geplaatst. De zijkanten van de trap zijn zwart gemaakt, wat mooi contrasteert met het lichte hout. Ook het traphekje met balusters is zelf op maat gemaakt, in dezelfde zwarte kleur, en sluit aan bij de stalen deur met glasindeling verderop in de hal, waardoor de trap en de rest van de gang visueel één geheel vormen. Trap renoveren, overzettreden of een traphekje op maat laten maken in Haarlem? Handymat Services pakt dit soort klussen op, inclusief het bijbehorende leidingwerk.</p>
     <div class="voor-na">
       <figure>
-        <img src="images/trap-haarlem-voor.png" alt="Oude trap voor renovatie met leidingwerk Haarlem">
+        <img src="images/trap-haarlem-voor.png" alt="Oude trap voor renovatie met leidingwerk Haarlem" width="437" height="480">
         <figcaption>Voor</figcaption>
       </figure>
       <figure>
-        <img src="images/trap-haarlem-na.png" alt="Gerenoveerde trap met overzettreden en traphekje Haarlem">
+        <img src="images/trap-haarlem-na.png" alt="Gerenoveerde trap met overzettreden en traphekje Haarlem" width="425" height="566">
         <figcaption>Na</figcaption>
       </figure>
     </div>
@@ -683,7 +696,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <p class="beschrijving">In deze woning in Heemstede zijn nieuwe houten plinten geplaatst, inclusief de lastigere hoeken rondom de haard. Plinten laten plaatsen of vervangen in Heemstede of omgeving? Handymat Services verzorgt dit soort afwerkingsklussen.</p>
     <div class="voor-na">
       <figure>
-        <img src="images/plinten-heemstede.jpg" alt="Nieuwe houten plinten geplaatst Heemstede">
+        <img src="images/plinten-heemstede.jpg" alt="Nieuwe houten plinten geplaatst Heemstede" width="1200" height="1600">
         <figcaption>Nieuwe plinten geplaatst</figcaption>
       </figure>
     </div>
@@ -694,11 +707,11 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <p class="beschrijving">Bij deze woning in Halfweg is de open zolderverdieping opgedeeld in twee aparte slaapkamers. Omdat de kamers bedoeld waren voor een baby en een tiener, is er bij de wanden bewust extra aandacht besteed aan isolatie, zowel voor een stabiele temperatuur als voor geluid tussen de twee ruimtes. De wanden zijn afgewerkt met renovatievliesbehang, dat kleine oneffenheden wegwerkt en meteen klaar is om te schilderen. Het resultaat is twee lichte, functionele kamers in plaats van één open zolder. Zolder splitsen of isoleren in Halfweg of omgeving? Handymat Services denkt mee over zowel de indeling als de afwerking.</p>
     <div class="voor-na">
       <figure>
-        <img src="images/zolder-halfweg-voor.png" alt="Open zolderverdieping voor renovatie Halfweg">
+        <img src="images/zolder-halfweg-voor.png" alt="Open zolderverdieping voor renovatie Halfweg" width="522" height="607">
         <figcaption>Voor</figcaption>
       </figure>
       <figure>
-        <img src="images/zolder-halfweg-na.png" alt="Open zolder gesplitst in 2 slaapkamers Halfweg">
+        <img src="images/zolder-halfweg-na.png" alt="Open zolder gesplitst in 2 slaapkamers Halfweg" width="521" height="696">
         <figcaption>Na</figcaption>
       </figure>
     </div>
@@ -712,9 +725,9 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <a href="mailto:info@handymat.nl" style="color:#555;text-decoration:none;margin:0 10px;">info@handymat.nl</a>
   </p>
   <p style="margin-bottom:8px;">
-    <a href="algemene-voorwaarden-consument.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
-    <a href="algemene-voorwaarden-zakelijk.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
-    <a href="privacy.html" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
+    <a href="algemene-voorwaarden-consument" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
+    <a href="algemene-voorwaarden-zakelijk" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
+    <a href="privacy" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
   </p>
   <p style="color:#999;font-size:0.82rem;">&copy; 2026 Handymat Services</p>
 </footer>

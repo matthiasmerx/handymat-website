@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Handymat Services | Klusbedrijf Haarlem</title>
+<link rel="canonical" href="https://handymat.nl/">
 <meta name="description" content="Handymat Services - Klusbedrijf in Haarlem en Kennemerland. Kleine en grote klussen, renovaties, wifi en techniek. 99 problems. Call Mat.">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -164,7 +165,8 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   .header-top table td { display:block; text-align:center; padding:4px 0; }
   .header-top table td img { width:200px; margin:0 auto; }
   .header-top table td h1 { font-size:1.5rem; }
-  .header-nav a { padding:10px 16px; font-size:0.85rem; }
+  .header-nav { display:flex; justify-content:center; }
+  .header-nav a { padding:10px 8px; font-size:0.75rem; white-space:nowrap; }
   .diensten-grid { grid-template-columns:1fr; } 
   
   
@@ -186,6 +188,17 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     "addressLocality": "Haarlem",
     "addressCountry": "NL"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.3621216,
+    "longitude": 4.6522178
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  },
   "areaServed": ["Haarlem", "Heemstede", "Kennemerland", "Amsterdam"],
   "priceRange": "€€"
 }
@@ -194,12 +207,12 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 <body>
 
 <nav class="header-nav">
-  <a href="index.html" class="active">Home</a>
-  <a href="over-mij.html">Over mij</a>
-  <a href="diensten.html">Diensten</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="tarieven.html">Tarieven</a>
-  <a href="contact.html">Contact</a>
+  <a href="/" class="active">Home</a>
+  <a href="over-mij">Over mij</a>
+  <a href="diensten">Diensten</a>
+  <a href="portfolio">Portfolio</a>
+  <a href="tarieven">Tarieven</a>
+  <a href="contact">Contact</a>
 </nav>
 
 <h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Klusjesman Haarlem &amp; Kennemerland</h1>
@@ -224,30 +237,30 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   <p class="intro">Ik bied een scala aan diensten aan die zijn afgestemd op de meest voorkomende werkzaamheden in en om het huis of kantoor.</p>
   <div class="diensten-grid">
     <div class="dienst">
-      <img src="images/kleine-klussen.jpg" alt="Kleine klussen">
+      <img src="images/kleine-klussen.jpg" alt="Kleine klussen" width="400" height="400">
       <h3>Kleine klussen</h3>
       <p>Die klusjes die al maanden op de lijst staan maar er nooit van komen. Een kraan die druppelt, kit rondom het bad of de keuken vernieuwen, plinten plaatsen, meubels die nog in de doos staan. Een IKEA-kast bouwt zichzelf niet op. Een lamp, schilderij of spiegel die nog niet hangt, een extra stopcontact dat handig zou zijn, een schakelaar op een andere plek of gewoon iets dat netjes geverfd moet worden.</p>
     </div>
     <div class="dienst">
-      <img src="images/techniek-thuis-kantoor.jpg" alt="Techniek thuis en kantoor">
+      <img src="images/techniek-thuis-kantoor.jpg" alt="Techniek thuis en kantoor" width="400" height="400">
       <h3>Techniek thuis &amp; kantoor</h3>
       <p>Wifi die het niet doet, een laptop die vastloopt of niet meer opstart, of een printer die weigert. Met een stevige IT-achtergrond helpt Mat je verder waar de meeste klusmannen afhaken. Tegenwoordig verbindt bijna alles via wifi: de tv, thermostaat, deurbel, beveiligingscamera, slimme verlichting, tablet of gameconsole. Mat zorgt dat het gewoon werkt.</p>
     </div>
     <div class="dienst">
-      <img src="images/grote-klussen.jpg" alt="Grote klussen">
+      <img src="images/grote-klussen.jpg" alt="Grote klussen" width="400" height="400">
       <h3>Grote klussen &amp; projecten</h3>
       <p>Laminaat of fotobehang in de kinderkamer, een badkamer betegelen, schilderwerk, een nieuwe wastafel of regendouche, een keukenblad vervangen of een inbouwkast bouwen. Maar ook volledige verbouwingen: een badkamer renoveren, een keuken plaatsen of de zolder bewoonbaar maken. Mat plant het in, komt goed voorbereid, denkt mee en maakt het af. Bij grotere projecten altijd op basis van een offerte.</p>
     </div>
   </div>
   <p style="text-align:center;margin-top:40px;">
-    <a href="diensten.html" style="display:inline-block;padding:14px 32px;background:#5a9e3a;color:#fff;text-decoration:none;border-radius:6px;font-weight:500;">Bekijk alle diensten</a>
+    <a href="diensten" style="display:inline-block;padding:14px 32px;background:#5a9e3a;color:#fff;text-decoration:none;border-radius:6px;font-weight:500;">Bekijk alle diensten</a>
   </p>
 </section>
 
 <section id="contact" style="padding:60px 40px;">
   <div style="max-width:1100px;margin:0 auto;display:flex;gap:60px;align-items:center;">
     <div style="flex:1;">
-      <img src="images/handymat-bus.jpg" alt="Handymat bus" style="width:100%;height:auto;">
+      <img src="images/handymat-bus.jpg" alt="Handymat bus" width="700" height="466" style="width:100%;height:auto;">
     </div>
     <div style="flex:0 0 360px;">
       <h2 style="font-size:2rem;font-weight:300;color:#5a9e3a;margin-bottom:20px;">Contact</h2>
@@ -255,7 +268,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
       <a href="https://api.whatsapp.com/send?phone=31613432804" style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;text-decoration:none;margin-bottom:18px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.563 4.14 1.541 5.877L.057 23.899l6.194-1.624A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.877 9.877 0 01-5.031-1.378l-.361-.214-3.741.981.999-3.648-.235-.374A9.861 9.861 0 012.106 12C2.106 6.58 6.58 2.106 12 2.106S21.894 6.58 21.894 12 17.42 21.894 12 21.894z"/></svg></a>
       <p style="margin-bottom:8px;">Telefoon: <a href="tel:+31613432804" style="color:#5a9e3a;">+31 6 13432804</a></p>
       <p style="margin-bottom:8px;">Mail: <a href="mailto:info@handymat.nl" style="color:#5a9e3a;">info@handymat.nl</a></p>
-      <p style="margin-bottom:8px;"><a href="#" style="color:#5a9e3a;">Tarieven</a></p>
+      <p style="margin-bottom:8px;"><a href="tarieven" style="color:#5a9e3a;">Tarieven</a></p>
     </div>
   </div>
 </section>
@@ -267,9 +280,9 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <a href="mailto:info@handymat.nl" style="color:#555;text-decoration:none;margin:0 10px;">info@handymat.nl</a>
   </p>
   <p style="margin-bottom:8px;">
-    <a href="algemene-voorwaarden-consument.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
-    <a href="algemene-voorwaarden-zakelijk.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
-    <a href="privacy.html" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
+    <a href="algemene-voorwaarden-consument" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
+    <a href="algemene-voorwaarden-zakelijk" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
+    <a href="privacy" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
   </p>
   <p style="color:#999;font-size:0.82rem;">&copy; 2026 Handymat Services</p>
 </footer>

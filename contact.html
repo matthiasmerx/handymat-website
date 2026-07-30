@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Handymat Services Haarlem</title>
+<link rel="canonical" href="https://handymat.nl/contact">
 <meta name="description" content="Neem contact op met Handymat Services in Haarlem. Bel, WhatsApp of mail voor een klusjesman in Kennemerland.">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -165,7 +166,8 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   .header-top table td { display:block; text-align:center; padding:4px 0; }
   .header-top table td img { width:200px; margin:0 auto; }
   .header-top table td h1 { font-size:1.5rem; }
-  .header-nav a { padding:10px 16px; font-size:0.85rem; }
+  .header-nav { display:flex; justify-content:center; }
+  .header-nav a { padding:10px 8px; font-size:0.75rem; white-space:nowrap; }
   .diensten-grid { grid-template-columns:1fr; } 
   
   
@@ -262,6 +264,17 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     "addressLocality": "Haarlem",
     "addressCountry": "NL"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.3621216,
+    "longitude": 4.6522178
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  },
   "areaServed": ["Haarlem", "Heemstede", "Kennemerland", "Amsterdam"],
   "priceRange": "€€"
 }
@@ -270,12 +283,12 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 <body>
 
 <nav class="header-nav">
-  <a href="index.html">Home</a>
-  <a href="over-mij.html">Over mij</a>
-  <a href="diensten.html">Diensten</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="tarieven.html">Tarieven</a>
-  <a href="contact.html" class="active">Contact</a>
+  <a href="/">Home</a>
+  <a href="over-mij">Over mij</a>
+  <a href="diensten">Diensten</a>
+  <a href="portfolio">Portfolio</a>
+  <a href="tarieven">Tarieven</a>
+  <a href="contact" class="active">Contact</a>
 </nav>
 
 <h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Contact Handymat Services Haarlem</h1>
@@ -317,18 +330,25 @@ footer a:hover { color:rgba(255,255,255,0.75); }
         <small style="color:#888;font-weight:400">E-mail</small>
       </div>
     </a>
+    <div class="clink" style="cursor:default;">
+      <div class="clink-icon" style="background:#5a8a2e;font-size:1.3rem">📍</div>
+      <div>
+        <div>Europaweg 1489, 2035 LA Haarlem</div>
+        <small style="color:#888;font-weight:400">Adres</small>
+      </div>
+    </div>
   </div>
   <div class="contact-van">
-    <img src="images/contact-foto.jpg" alt="Handymat Services klusbedrijf Haarlem">
+    <img src="images/contact-foto.jpg" alt="Handymat Services klusbedrijf Haarlem" width="700" height="469">
   </div>
 </div>
 
 <footer style="background:#f5f5f5;padding:28px 40px;text-align:center;border-top:1px solid #ddd;">
   <p style="color:#555;margin-bottom:8px;">Handymat Services &bull; Haarlem &amp; Kennemerland</p>
   <p style="margin-bottom:8px;">
-    <a href="algemene-voorwaarden-consument.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
-    <a href="algemene-voorwaarden-zakelijk.html" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
-    <a href="privacy.html" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
+    <a href="algemene-voorwaarden-consument" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
+    <a href="algemene-voorwaarden-zakelijk" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
+    <a href="privacy" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
   </p>
   <p style="color:#999;font-size:0.82rem;">&copy; 2026 Handymat Services</p>
 </footer>
