@@ -60,6 +60,7 @@ body { margin:0; }
   text-decoration:none;
   font-size:1rem;
 }
+.header-nav a .nav-short { display:none; }
 
 .header-nav a:hover { color:#3a6b1e; }
 .header-nav a.active {
@@ -167,7 +168,9 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   .header-top table td img { width:200px; margin:0 auto; }
   .header-top table td h1 { font-size:1.5rem; }
   .header-nav { display:flex; justify-content:center; }
-  .header-nav a { padding:10px 8px; font-size:0.75rem; white-space:nowrap; }
+  .header-nav a { padding:10px 3px; font-size:0.75rem; white-space:nowrap; }
+  .header-nav a .nav-full { display:none; }
+  .header-nav a .nav-short { display:inline; }
   .diensten-grid { grid-template-columns:1fr; } 
   
   
@@ -251,6 +254,10 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   margin-top:6px;
   text-transform:uppercase;
   letter-spacing:0.05em;
+}
+
+.voor-na.voor-na-single {
+  grid-template-columns:1fr;
 }
 
 @media(max-width:600px) {
@@ -434,7 +441,8 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   <a href="diensten">Diensten</a>
   <a href="portfolio" class="active">Portfolio</a>
   <a href="tarieven">Tarieven</a>
-  <a href="contact">Contact</a>
+  <a href="verhuurders-vastgoed"><span class="nav-full">Vastgoedbeheer</span><span class="nav-short">Vastgoed</span></a>
+  <a href="/#contact">Contact</a>
 </nav>
 
 <h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Portfolio klusjesman Haarlem</h1>
@@ -552,6 +560,15 @@ footer a:hover { color:rgba(255,255,255,0.75); }
       <div class="project-card-body">
         <h2>Open zolder splitsen in 2 slaapkamers | Halfweg</h2>
         <p class="project-card-teaser">Open zolder omgebouwd tot 2 volwaardige slaapkamers, met extra aandacht voor isolatie.</p>
+        <span class="project-card-cta">Bekijk klus &rarr;</span>
+      </div>
+    </button>
+
+    <button class="project-card" data-project="project-12">
+      <img src="images/koof-ledverlichting-haarlem.jpg" alt="Koof met ledverlichting en surroundspeakers Haarlem" width="1600" height="900">
+      <div class="project-card-body">
+        <h2>Koof met ledverlichting en aansluiting voor surroundspeakers | Haarlem</h2>
+        <p class="project-card-teaser">Verlaagde koof met sfeervolle ledverlichting en verborgen bekabeling voor 2 surroundspeakers.</p>
         <span class="project-card-cta">Bekijk klus &rarr;</span>
       </div>
     </button>
@@ -716,6 +733,17 @@ footer a:hover { color:rgba(255,255,255,0.75); }
       </figure>
     </div>
   </div>
+
+  <div class="project" id="project-12">
+    <h2>Koof met ledverlichting en aansluiting voor surroundspeakers | Haarlem</h2>
+    <p class="beschrijving">Bij deze woonkamer in Haarlem is een koof gebouwd langs het plafond, met daarin ingebouwde ledspots voor sfeerverlichting. In dezelfde koof is meteen de elektra-aansluiting voor 2 surroundspeakers meegenomen. Het resultaat is een strakke, afgewerkte plafondrand die zowel sfeer toevoegt als de speakeropstelling praktisch bekabeld maakt. Koof bouwen, ledverlichting of een elektra-aansluiting voor speakers laten aanleggen in Haarlem? Handymat Services denkt mee over zowel de afwerking als de bekabeling.</p>
+    <div class="voor-na voor-na-single">
+      <figure>
+        <img src="images/koof-ledverlichting-haarlem.jpg" alt="Koof met ledverlichting en surroundspeakers Haarlem" width="1600" height="900">
+        <figcaption>Koof met ledverlichting en surroundspeaker-aansluiting</figcaption>
+      </figure>
+    </div>
+  </div>
 </div>
 
 <footer style="background:#f5f5f5;padding:28px 40px;text-align:center;border-top:1px solid #ddd;">
@@ -781,6 +809,12 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && overlay.classList.contains('open')) closeModal();
   });
+
+  var initialId = window.location.hash.slice(1);
+  if (initialId && document.getElementById(initialId)) {
+    lastTrigger = document.querySelector('.project-card[data-project="' + initialId + '"]');
+    openProject(initialId);
+  }
 })();
 </script>
 

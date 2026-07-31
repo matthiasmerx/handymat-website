@@ -59,6 +59,7 @@ body { margin:0; }
   text-decoration:none;
   font-size:1rem;
 }
+.header-nav a .nav-short { display:none; }
 
 .header-nav a:hover { color:#3a6b1e; }
 .header-nav a.active {
@@ -147,6 +148,52 @@ body { margin:0; }
   line-height:1.75;
 }
 
+/* TESTIMONIALS */
+.testimonials {
+  padding:70px 40px;
+  background:#f7f7f7;
+  text-align:center;
+}
+
+.testimonials h2 {
+  font-size:2rem;
+  font-weight:300;
+  color:#5a9e3a;
+  margin-bottom:16px;
+}
+
+.testimonial-stars {
+  color:#f5a623;
+  font-size:1.6rem;
+  letter-spacing:4px;
+  margin-bottom:20px;
+}
+
+.testimonial-quote {
+  max-width:700px;
+  margin:0 auto 20px;
+  color:#555;
+  font-size:1.05rem;
+  line-height:1.8;
+  font-style:italic;
+}
+
+.testimonial-author {
+  color:#3a6b1e;
+  font-weight:500;
+  margin-bottom:12px;
+}
+
+.testimonial-link a {
+  color:#5a9e3a;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.testimonial-link a:hover {
+  text-decoration:underline;
+}
+
 /* FOOTER */
 footer {
   background:#222;
@@ -166,7 +213,9 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   .header-top table td img { width:200px; margin:0 auto; }
   .header-top table td h1 { font-size:1.5rem; }
   .header-nav { display:flex; justify-content:center; }
-  .header-nav a { padding:10px 8px; font-size:0.75rem; white-space:nowrap; }
+  .header-nav a { padding:10px 3px; font-size:0.75rem; white-space:nowrap; }
+  .header-nav a .nav-full { display:none; }
+  .header-nav a .nav-short { display:inline; }
   .diensten-grid { grid-template-columns:1fr; } 
   
   
@@ -200,7 +249,25 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     "closes": "18:00"
   },
   "areaServed": ["Haarlem", "Heemstede", "Kennemerland", "Amsterdam"],
-  "priceRange": "€€"
+  "priceRange": "€€",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "1"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Linda Smedeman"
+    },
+    "reviewBody": "Ik ben zeer tevreden over de verbouwing van mijn badkamer. Er werd actief meegedacht over het ontwerp en de verschillende mogelijkheden, met oplossingen die pasten in het budget. De communicatie was duidelijk, de planning was helder en afspraken werden nagekomen. Mijn badkamer is vakkundig afgewerkt en het eindresultaat voldoet precies aan mijn verwachtingen."
+  }
 }
 </script>
 </head>
@@ -212,7 +279,8 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   <a href="diensten">Diensten</a>
   <a href="portfolio">Portfolio</a>
   <a href="tarieven">Tarieven</a>
-  <a href="contact">Contact</a>
+  <a href="verhuurders-vastgoed"><span class="nav-full">Vastgoedbeheer</span><span class="nav-short">Vastgoed</span></a>
+  <a href="/#contact">Contact</a>
 </nav>
 
 <h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Klusjesman Haarlem &amp; Kennemerland</h1>
@@ -255,6 +323,16 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   <p style="text-align:center;margin-top:40px;">
     <a href="diensten" style="display:inline-block;padding:14px 32px;background:#5a9e3a;color:#fff;text-decoration:none;border-radius:6px;font-weight:500;">Bekijk alle diensten</a>
   </p>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <h2>Wat klanten zeggen</h2>
+  <div class="testimonial-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+  <blockquote class="testimonial-quote">
+    &ldquo;Ik ben zeer tevreden over de verbouwing van mijn badkamer. Er werd actief meegedacht over het ontwerp en de verschillende mogelijkheden, met oplossingen die pasten in het budget. De communicatie was duidelijk, de planning was helder en afspraken werden nagekomen. Mijn badkamer is vakkundig afgewerkt en het eindresultaat voldoet precies aan mijn verwachtingen.&rdquo;
+  </blockquote>
+  <p class="testimonial-author">&mdash; Linda S., badkamerrenovatie Haarlem</p>
+  <p class="testimonial-link"><a href="portfolio#project-2">Bekijk dit project &rarr;</a></p>
 </section>
 
 <section id="contact" style="padding:60px 40px;">

@@ -60,6 +60,7 @@ body { margin:0; }
   text-decoration:none;
   font-size:1rem;
 }
+.header-nav a .nav-short { display:none; }
 
 .header-nav a:hover { color:#3a6b1e; }
 .header-nav a.active {
@@ -167,7 +168,9 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   .header-top table td img { width:200px; margin:0 auto; }
   .header-top table td h1 { font-size:1.5rem; }
   .header-nav { display:flex; justify-content:center; }
-  .header-nav a { padding:10px 8px; font-size:0.75rem; white-space:nowrap; }
+  .header-nav a { padding:10px 3px; font-size:0.75rem; white-space:nowrap; }
+  .header-nav a .nav-full { display:none; }
+  .header-nav a .nav-short { display:inline; }
   .diensten-grid { grid-template-columns:1fr; } 
   
   
@@ -303,7 +306,8 @@ tbody td {
   <a href="diensten">Diensten</a>
   <a href="portfolio">Portfolio</a>
   <a href="tarieven" class="active">Tarieven</a>
-  <a href="contact">Contact</a>
+  <a href="verhuurders-vastgoed"><span class="nav-full">Vastgoedbeheer</span><span class="nav-short">Vastgoed</span></a>
+  <a href="/#contact">Contact</a>
 </nav>
 
 <h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Tarieven klusjesman Haarlem</h1>
