@@ -162,36 +162,23 @@ body { margin:0; }
   margin-bottom:16px;
 }
 
-.testimonial-stars {
+.testimonial-rating {
   color:#f5a623;
-  font-size:1.6rem;
-  letter-spacing:4px;
-  margin-bottom:20px;
+  font-size:1.4rem;
+  margin-bottom:28px;
 }
 
-.testimonial-quote {
-  max-width:700px;
-  margin:0 auto 20px;
-  color:#555;
-  font-size:1.05rem;
-  line-height:1.8;
-  font-style:italic;
-}
-
-.testimonial-author {
+.testimonial-rating .rating-number {
   color:#3a6b1e;
   font-weight:500;
-  margin-bottom:12px;
+  font-size:1.1rem;
+  margin-right:8px;
 }
 
-.testimonial-link a {
-  color:#5a9e3a;
-  text-decoration:none;
-  font-weight:500;
-}
-
-.testimonial-link a:hover {
-  text-decoration:underline;
+.testimonial-rating .rating-count {
+  color:#555;
+  font-size:1rem;
+  margin-left:8px;
 }
 
 /* CONTACT */
@@ -317,7 +304,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5",
-    "reviewCount": "1"
+    "reviewCount": "2"
   },
   "review": {
     "@type": "Review",
@@ -391,12 +378,12 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 
 <section class="testimonials" id="testimonials">
   <h2>Wat klanten zeggen</h2>
-  <div class="testimonial-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-  <blockquote class="testimonial-quote">
-    &ldquo;Ik ben zeer tevreden over de verbouwing van mijn badkamer. Er werd actief meegedacht over het ontwerp en de verschillende mogelijkheden, met oplossingen die pasten in het budget. De communicatie was duidelijk, de planning was helder en afspraken werden nagekomen. Mijn badkamer is vakkundig afgewerkt en het eindresultaat voldoet precies aan mijn verwachtingen.&rdquo;
-  </blockquote>
-  <p class="testimonial-author">&mdash; Linda S., badkamerrenovatie Haarlem</p>
-  <p class="testimonial-link"><a href="portfolio#project-2">Bekijk dit project &rarr;</a></p>
+  <p class="testimonial-rating">
+    <span class="rating-number">5.0</span><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rating-count">(2 reviews)</span>
+  </p>
+  <p style="text-align:center;">
+    <a href="https://g.page/r/CZDGw_dmRXdyEAE/review" target="_blank" rel="noopener" style="display:inline-block;padding:14px 32px;background:#5a9e3a;color:#fff;text-decoration:none;border-radius:6px;font-weight:500;">Laat ook een review achter</a>
+  </p>
 </section>
 
 <section id="contact" style="padding:60px 40px;">
@@ -434,6 +421,13 @@ footer a:hover { color:rgba(255,255,255,0.75); }
         <small style="color:#888;font-weight:400">Adres</small>
       </div>
     </div>
+    <a href="https://www.linkedin.com/company/handymat-services/" target="_blank" rel="noopener" class="clink">
+      <div class="clink-icon" style="background:#0A66C2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667h-3.554V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zM7.119 20.452H3.555V9h3.564v11.452z"/></svg></div>
+      <div>
+        <div>LinkedIn</div>
+        <small style="color:#888;font-weight:400">Volg ons</small>
+      </div>
+    </a>
   </div>
   </div>
 </section>
@@ -443,6 +437,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   <p style="margin-bottom:8px;">
     <a href="tel:+31613432804" style="color:#555;text-decoration:none;margin:0 10px;">06 13432804</a>
     <a href="mailto:info@handymat.nl" style="color:#555;text-decoration:none;margin:0 10px;">info@handymat.nl</a>
+    <a href="https://www.linkedin.com/company/handymat-services/" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#555;text-decoration:none;margin:0 10px;display:inline-flex;align-items:center;vertical-align:middle;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667h-3.554V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zM7.119 20.452H3.555V9h3.564v11.452z"/></svg></a>
   </p>
   <p style="margin-bottom:8px;">
     <a href="algemene-voorwaarden-consument" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
