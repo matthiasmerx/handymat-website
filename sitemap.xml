@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://handymat.nl/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://handymat.nl/en/</loc>
+    <lastmod>2026-08-01</lastmod>
   </url>
   <url>
     <loc>https://handymat.nl/over-mij.html</loc>
@@ -10,7 +14,11 @@
   </url>
   <url>
     <loc>https://handymat.nl/diensten.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://handymat.nl/en/services.html</loc>
+    <lastmod>2026-08-01</lastmod>
   </url>
   <url>
     <loc>https://handymat.nl/verhuurders-vastgoed.html</loc>
