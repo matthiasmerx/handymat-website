@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Over mij | Handymat Services Haarlem</title>
-<link rel="canonical" href="https://handymat.nl/over-mij">
-<link rel="alternate" hreflang="nl" href="https://handymat.nl/over-mij.html">
-<link rel="alternate" hreflang="en" href="https://handymat.nl/en/about.html">
-<link rel="alternate" hreflang="x-default" href="https://handymat.nl/over-mij.html">
-<meta name="description" content="Mat Merx, klusbedrijf Handymat Services in Haarlem. 28 jaar IT-ervaring gecombineerd met een passie voor klussen.">
+<title>Rates | Handymat Services Haarlem</title>
+<link rel="canonical" href="https://handymat.nl/en/rates.html">
+<link rel="alternate" hreflang="nl" href="https://handymat.nl/tarieven.html">
+<link rel="alternate" hreflang="en" href="https://handymat.nl/en/rates.html">
+<link rel="alternate" hreflang="x-default" href="https://handymat.nl/tarieven.html">
+<meta name="description" content="Handymat Services rates in Haarlem. Hourly rate for a handyman in Haarlem, day rate, fixed prices. Prices including and excluding VAT.">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 
@@ -192,73 +192,99 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   .header-nav a { padding:10px 3px; font-size:0.75rem; white-space:nowrap; }
   .header-nav a .nav-full { display:none; }
   .header-nav a .nav-short { display:inline; }
-  .diensten-grid { grid-template-columns:1fr; } 
-  
-  
+  .diensten-grid { grid-template-columns:1fr; }
+
+
 }
 
 
-/* OVER MIJ */
-.over-intro {
-  background: #5a8a2e;
-  padding: 30px 40px;
-  text-align: center;
+.tarieven-hero {
+  background:#5a8a2e;
+  padding:48px 40px;
+  text-align:center;
 }
 
-.over-intro h2 {
-  font-weight: 400;
-  font-size: 2rem;
-  color: #fff;
-  margin: 0 auto 12px;
+.tarieven-hero h2 {
+  font-size:1.8rem;
+  font-weight:400;
+  color:#fff;
+  font-style:italic;
+  margin-bottom:16px;
 }
 
-.over-intro p {
-  color: rgba(255,255,255,0.92);
-  font-size: 1rem;
-  line-height: 1.5;
-  max-width: 680px;
-  margin: 0 auto 12px;
+.tarieven-hero p {
+  color:rgba(255,255,255,0.9);
+  font-size:1rem;
+  line-height:1.75;
+  max-width:600px;
+  margin:0 auto;
 }
 
-.over-intro blockquote {
-  color: #fff;
-  font-style: italic;
-  font-size: 1.05rem;
-  line-height: 1.5;
-  max-width: 680px;
-  margin: 0 auto;
+.tarieven-content {
+  max-width:700px;
+  margin:0 auto;
+  padding:60px 40px;
 }
 
-.over-bio {
-  padding: 70px 40px;
-  background: #fff;
+.btw-toggle {
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:32px;
+  font-size:0.95rem;
+  color:#555;
 }
 
-.over-bio-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  gap: 60px;
-  align-items: flex-start;
+.btw-toggle label {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  cursor:pointer;
 }
 
-.over-bio-inner img {
-  width: 320px;
-  height: auto;
-  flex-shrink: 0;
-  border-radius: 8px;
+.btw-toggle input[type=radio] {
+  accent-color:#5a8a2e;
+  width:18px;
+  height:18px;
 }
 
-.over-bio-text p {
-  color: #555;
-  font-size: 0.97rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
+.tarieven-content table {
+  width:100%;
+  border-collapse:collapse;
+  font-size:0.95rem;
 }
 
-@media(max-width:768px) {
-  .over-bio-inner { flex-direction: column; }
-  .over-bio-inner img { width: 100%; height: auto; }
+thead tr {
+  background:#3a6b1e;
+  color:#fff;
+}
+
+thead th {
+  padding:14px 16px;
+  text-align:left;
+  font-weight:500;
+}
+
+tbody tr:nth-child(even) {
+  background:#f5f5f5;
+}
+
+tbody tr:nth-child(odd) {
+  background:#fff;
+}
+
+tbody td {
+  padding:13px 16px;
+  border-bottom:1px solid #e8e8e8;
+  color:#444;
+  vertical-align:top;
+}
+
+.noot {
+  margin-top:20px;
+  font-size:0.85rem;
+  color:#777;
+  line-height:1.7;
 }
 </style>
 <script type="application/ld+json">
@@ -267,8 +293,8 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   "@type": "HomeAndConstructionBusiness",
   "name": "Handymat Services",
   "image": "https://handymat.nl/images/logo.png",
-  "url": "https://handymat.nl/",
-  "inLanguage": "nl",
+  "url": "https://handymat.nl/en/",
+  "inLanguage": "en",
   "telephone": "+31613432804",
   "email": "info@handymat.nl",
   "address": {
@@ -297,42 +323,82 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 <body>
 
 <nav class="header-nav">
-  <a href="/">Home</a>
-  <a href="over-mij" class="active">Over mij</a>
-  <a href="diensten">Diensten</a>
-  <a href="portfolio">Portfolio</a>
-  <a href="tarieven">Tarieven</a>
-  <a href="verhuurders-vastgoed"><span class="nav-full">Vastgoedbeheer</span><span class="nav-short">Vastgoed</span></a>
-  <a href="/#contact">Contact</a>
-  <a href="/en/about.html" class="lang-switch" aria-label="Switch to English"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="10"><rect width="60" height="30" fill="#00247d"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#cf142b" stroke-width="2"/><path d="M30,0 V30 M0,15 H60" stroke="#fff" stroke-width="10"/><path d="M30,0 V30 M0,15 H60" stroke="#cf142b" stroke-width="6"/></svg> EN</a>
+  <a href="/en/">Home</a>
+  <a href="/en/about.html">About</a>
+  <a href="/en/services.html">Services</a>
+  <a href="/en/portfolio.html">Portfolio</a>
+  <a href="/en/rates.html" class="active">Rates</a>
+  <a href="/en/property-management.html"><span class="nav-full">Property management</span><span class="nav-short">Property</span></a>
+  <a href="/en/#contact">Contact</a>
+  <a href="/tarieven.html" class="lang-switch" aria-label="Naar de Nederlandse versie"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 36" width="20" height="12"><rect width="60" height="12" y="0" fill="#AE1C28"/><rect width="60" height="12" y="12" fill="#FFFFFF"/><rect width="60" height="12" y="24" fill="#21468B"/></svg> NL</a>
 </nav>
 
-<h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Over Mat Merx klusjesman Haarlem</h1>
+<h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Handyman rates Haarlem</h1>
 
 <div class="header-top">
   <table>
     <tr>
-      <td><img src="images/logo.png" alt="Handymat Services logo" width="600" height="306"></td>
-      <td><p style="font-family:'Roboto',Arial,sans-serif;font-weight:300;font-size:2.2rem;color:#5a8a2e;line-height:1;">Klussen en<br>renovatie</p></td>
+      <td><img src="/images/logo.png" alt="Handymat Services logo" width="600" height="306"></td>
+      <td><p style="font-family:'Roboto',Arial,sans-serif;font-weight:300;font-size:2.2rem;color:#5a8a2e;line-height:1;">Repairs &amp;<br>renovation</p></td>
     </tr>
   </table>
 </div>
 
-<section class="over-intro">
-  <h2><em>"99 problems. Call Mat."</em></h2>
-  <p>Mijn naam is Mat. Na een 28 jaar lange carriere in de IT besloot ik voorjaar 2026 voor de tweede keer in mijn leven van mijn hobby mijn beroep te maken: mijn eigen klussenbedrijf. Klussen zit me in het bloed.</p>
-  <blockquote>"Wat ik meeneem uit mijn IT-carriere is misschien wel even waardevol als mijn kluservaring: ik ben gewend te communiceren, te plannen, afspraken na te komen en op tijd te verschijnen."</blockquote>
+<section class="tarieven-hero">
+  <h2>"Know where you stand. Before you start."</h2>
+  <p>I generally work during the day. If we agree that evenings or weekends suit you better, the same rates apply.</p>
 </section>
 
-<section class="over-bio">
-  <div class="over-bio-inner">
-    <img src="images/mat-merx.jpg" alt="Mat Merx, Handymat Services" width="600" height="800">
-    <div class="over-bio-text">
-      <p>Bij mij weet je waar je aan toe bent. Je krijgt een eerlijke inschatting vooraf, ik kom op het afgesproken tijdstip, en als er iets verandert hoor je dat van mij. Daar hoort ook een heldere factuur bij, een duidelijke afspraak over wat er wel en niet in de prijs zit, en transparante communicatie als er tijdens de klus iets bijkomt.</p>
-      <p>Ik werk met plezier: handen uit de mouwen, problemen oplossen, mooie dingen maken en resultaat zien. Wanneer een klus om extra handen vraagt, bij zwaar werk of zeer specialistische onderdelen, schakel ik gericht hulp in. Ik neem alleen klussen aan waarvan ik weet dat ik ze goed kan afleveren, en waarvan ik vooraf kan inschatten hoeveel werk en tijd het kost.</p>
-    </div>
+<div class="tarieven-content">
+
+  <div class="btw-toggle">
+    <strong>Show prices:</strong>
+    <label><input type="radio" name="btw" value="incl" checked onchange="toggleBtw(this)"> Including VAT (private)</label>
+    <label><input type="radio" name="btw" value="excl" onchange="toggleBtw(this)"> Excluding VAT (business)</label>
   </div>
-</section>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Per hour</td>
+        <td><span class="incl">€65.00</span><span class="excl" style="display:none">€53.72</span></td>
+      </tr>
+      <tr>
+        <td>Half day</td>
+        <td><span class="incl">€250.00</span><span class="excl" style="display:none">€206.61</span></td>
+      </tr>
+      <tr>
+        <td>Full day</td>
+        <td><span class="incl">€500.00</span><span class="excl" style="display:none">€413.22</span></td>
+      </tr>
+      <tr>
+        <td>Fixed price</td>
+        <td>After quote</td>
+      </tr>
+      <tr>
+        <td>Travel time costs (Kennemerland region)</td>
+        <td><span class="incl">€0.00</span><span class="excl" style="display:none">€0.00</span> <small>(* see note)</small></td>
+      </tr>
+      <tr>
+        <td>Small materials (screws, wall plugs, nails, etc.)</td>
+        <td>Charged after the job</td>
+      </tr>
+      <tr>
+        <td>Larger materials (timber, sheet materials, paint, etc.)</td>
+        <td>By arrangement</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="noot">* For jobs shorter than half a day and more than 15km from my business address, I may charge a travel fee of €15.00.</p>
+
+</div>
 
 <footer style="background:#f5f5f5;padding:28px 40px;text-align:center;border-top:1px solid #ddd;">
   <p style="color:#555;margin-bottom:8px;">Handymat Services &bull; Haarlem &amp; Kennemerland</p>
@@ -342,12 +408,26 @@ footer a:hover { color:rgba(255,255,255,0.75); }
     <a href="https://www.linkedin.com/company/handymat-services/" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#555;text-decoration:none;margin:0 10px;display:inline-flex;align-items:center;vertical-align:middle;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667h-3.554V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zM7.119 20.452H3.555V9h3.564v11.452z"/></svg></a>
   </p>
   <p style="margin-bottom:8px;">
-    <a href="algemene-voorwaarden-consument" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden consumenten</a>
-    <a href="algemene-voorwaarden-zakelijk" style="color:#555;text-decoration:none;margin:0 10px;">Algemene voorwaarden zakelijk</a>
-    <a href="privacy" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
+    <a href="/en/terms-consumers.html" style="color:#555;text-decoration:none;margin:0 10px;">Terms and conditions (consumers)</a>
+    <a href="/en/terms-business.html" style="color:#555;text-decoration:none;margin:0 10px;">Terms and conditions (business)</a>
+    <a href="/en/privacy.html" style="color:#555;text-decoration:none;margin:0 10px;">Privacy</a>
   </p>
   <p style="color:#999;font-size:0.82rem;">&copy; 2026 Handymat Services</p>
 </footer>
+
+<script>
+function toggleBtw(el) {
+  const incl = document.querySelectorAll('.incl');
+  const excl = document.querySelectorAll('.excl');
+  if (el.value === 'incl') {
+    incl.forEach(e => e.style.display = '');
+    excl.forEach(e => e.style.display = 'none');
+  } else {
+    incl.forEach(e => e.style.display = 'none');
+    excl.forEach(e => e.style.display = '');
+  }
+}
+</script>
 
 </body>
 </html>
