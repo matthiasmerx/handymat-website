@@ -15,20 +15,24 @@ KEY="c858108357903ccfb47fdcbe0ed2ba8a"
 KEY_LOCATION="https://${HOST}/${KEY}.txt"
 ENDPOINT="https://api.indexnow.org/indexnow"
 
-# Alle huidige pagina's van de site. Root komt overeen met index.html.
+# Alle huidige pagina's uit sitemap.xml (extensieloos, consistent met canonicals).
+# Noindex-pagina's (privacy, algemene voorwaarden, EN-varianten daarvan) staan
+# hier bewust niet in, net als in de sitemap.
 ALL_PAGES=(
   ""
-  "over-mij.html"
-  "diensten.html"
-  "verhuurders-vastgoed.html"
-  "it-diensten.html"
-  "wandpanelen.html"
-  "portfolio.html"
-  "tarieven.html"
-  "contact.html"
-  "algemene-voorwaarden-consument.html"
-  "algemene-voorwaarden-zakelijk.html"
-  "privacy.html"
+  "over-mij"
+  "diensten"
+  "verhuurders-vastgoed"
+  "it-diensten"
+  "wandpanelen"
+  "portfolio"
+  "tarieven"
+  "en/"
+  "en/about"
+  "en/services"
+  "en/portfolio"
+  "en/rates"
+  "en/property-management"
 )
 
 if [ "$#" -gt 0 ]; then

@@ -2,58 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://handymat.nl/</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-02</lastmod>
   </url>
   <url>
     <loc>https://handymat.nl/en/</loc>
-    <lastmod>2026-08-01</lastmod>
-  </url>
-  <url>
-    <loc>https://handymat.nl/over-mij.html</loc>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
-    <loc>https://handymat.nl/en/about.html</loc>
+    <loc>https://handymat.nl/over-mij</loc>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
-    <loc>https://handymat.nl/diensten.html</loc>
-    <lastmod>2026-08-01</lastmod>
-  </url>
-  <url>
-    <loc>https://handymat.nl/en/services.html</loc>
-    <lastmod>2026-08-01</lastmod>
-  </url>
-  <url>
-    <loc>https://handymat.nl/verhuurders-vastgoed.html</loc>
+    <loc>https://handymat.nl/en/about</loc>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
-    <loc>https://handymat.nl/en/property-management.html</loc>
+    <loc>https://handymat.nl/diensten</loc>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
-    <loc>https://handymat.nl/it-diensten.html</loc>
-    <lastmod>2026-07-12</lastmod>
-  </url>
-  <url>
-    <loc>https://handymat.nl/wandpanelen.html</loc>
-    <lastmod>2026-07-12</lastmod>
-  </url>
-  <url>
-    <loc>https://handymat.nl/portfolio.html</loc>
+    <loc>https://handymat.nl/en/services</loc>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
-    <loc>https://handymat.nl/en/portfolio.html</loc>
+    <loc>https://handymat.nl/verhuurders-vastgoed</loc>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
-    <loc>https://handymat.nl/tarieven.html</loc>
+    <loc>https://handymat.nl/en/property-management</loc>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
-    <loc>https://handymat.nl/en/rates.html</loc>
+    <loc>https://handymat.nl/it-diensten</loc>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://handymat.nl/wandpanelen</loc>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://handymat.nl/portfolio</loc>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://handymat.nl/en/portfolio</loc>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://handymat.nl/tarieven</loc>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://handymat.nl/en/rates</loc>
     <lastmod>2026-08-02</lastmod>
   </url>
 </urlset>

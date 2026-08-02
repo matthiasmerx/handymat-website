@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rates | Handymat Services Haarlem</title>
-<link rel="canonical" href="https://handymat.nl/en/rates.html">
-<link rel="alternate" hreflang="nl" href="https://handymat.nl/tarieven.html">
-<link rel="alternate" hreflang="en" href="https://handymat.nl/en/rates.html">
-<link rel="alternate" hreflang="x-default" href="https://handymat.nl/tarieven.html">
+<link rel="canonical" href="https://handymat.nl/en/rates">
+<link rel="alternate" hreflang="nl" href="https://handymat.nl/tarieven">
+<link rel="alternate" hreflang="en" href="https://handymat.nl/en/rates">
+<link rel="alternate" hreflang="x-default" href="https://handymat.nl/tarieven">
 <meta name="description" content="Handymat Services rates in Haarlem. Hourly rate for a handyman in Haarlem, day rate, fixed prices. Prices including and excluding VAT.">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -189,9 +189,12 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   .header-top table td img { width:200px; margin:0 auto; }
   .header-top table td h1 { font-size:1.5rem; }
   .header-nav { display:flex; justify-content:center; }
-  .header-nav a { padding:10px 3px; font-size:0.75rem; white-space:nowrap; }
+  .header-nav a { padding:10px 2px; font-size:0.75rem; white-space:nowrap; }
   .header-nav a .nav-full { display:none; }
   .header-nav a .nav-short { display:inline; }
+  .lang-switch { padding:5px 6px !important; margin:6px 2px 6px 3px !important; }
+  .lang-switch .lang-label { display:none; }
+  .lang-switch svg { width:14px; height:auto; }
   .diensten-grid { grid-template-columns:1fr; }
 
 
@@ -324,13 +327,13 @@ tbody td {
 
 <nav class="header-nav">
   <a href="/en/">Home</a>
-  <a href="/en/about.html">About</a>
-  <a href="/en/services.html">Services</a>
-  <a href="/en/portfolio.html">Portfolio</a>
-  <a href="/en/rates.html" class="active">Rates</a>
-  <a href="/en/property-management.html"><span class="nav-full">Property management</span><span class="nav-short">Property</span></a>
+  <a href="/en/about">About</a>
+  <a href="/en/services">Services</a>
+  <a href="/en/portfolio">Portfolio</a>
+  <a href="/en/rates" class="active">Rates</a>
+  <a href="/en/property-management"><span class="nav-full">Property management</span><span class="nav-short">Property</span></a>
   <a href="/en/#contact">Contact</a>
-  <a href="/tarieven.html" class="lang-switch" aria-label="Naar de Nederlandse versie"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 36" width="20" height="12"><rect width="60" height="12" y="0" fill="#AE1C28"/><rect width="60" height="12" y="12" fill="#FFFFFF"/><rect width="60" height="12" y="24" fill="#21468B"/></svg> NL</a>
+  <a href="/tarieven" class="lang-switch" aria-label="Naar de Nederlandse versie"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="10"><rect width="60" height="30" fill="#00247d"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#cf142b" stroke-width="2"/><path d="M30,0 V30 M0,15 H60" stroke="#fff" stroke-width="10"/><path d="M30,0 V30 M0,15 H60" stroke="#cf142b" stroke-width="6"/></svg><span class="lang-label"> EN</span></a>
 </nav>
 
 <h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Handyman rates Haarlem</h1>
@@ -353,8 +356,8 @@ tbody td {
 
   <div class="btw-toggle">
     <strong>Show prices:</strong>
-    <label><input type="radio" name="btw" value="incl" checked onchange="toggleBtw(this)"> Including VAT (private)</label>
-    <label><input type="radio" name="btw" value="excl" onchange="toggleBtw(this)"> Excluding VAT (business)</label>
+    <label><input type="radio" name="btw" value="incl" checked onchange="toggleBtw(this)"> Including VAT (private clients)</label>
+    <label><input type="radio" name="btw" value="excl" onchange="toggleBtw(this)"> Excluding VAT (business clients)</label>
   </div>
 
   <table>
@@ -382,7 +385,7 @@ tbody td {
         <td>After quote</td>
       </tr>
       <tr>
-        <td>Travel time costs (Kennemerland region)</td>
+        <td>Travel costs (Kennemerland region)</td>
         <td><span class="incl">€0.00</span><span class="excl" style="display:none">€0.00</span> <small>(* see note)</small></td>
       </tr>
       <tr>
@@ -396,7 +399,7 @@ tbody td {
     </tbody>
   </table>
 
-  <p class="noot">* For jobs shorter than half a day and more than 15km from my business address, I may charge a travel fee of €15.00.</p>
+  <p class="noot">* For jobs shorter than half a day and more than 15 km from my business address, I may charge a travel fee of €15.00.</p>
 
 </div>
 

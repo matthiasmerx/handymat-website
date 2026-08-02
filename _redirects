@@ -22,3 +22,22 @@
 /algemene-voorwaarden-zakelijk           /algemene-voorwaarden-zakelijk.html      200
 /privacy.html                            /privacy                                 301!
 /privacy                                 /privacy.html                            200
+
+/en/index.html                           /en/                                     301!
+/en/index                                /en/                                     301!
+/en/about.html                           /en/about                                301!
+/en/about                                /en/about.html                           200
+/en/services.html                        /en/services                             301!
+/en/services                             /en/services.html                        200
+/en/portfolio.html                       /en/portfolio                            301!
+/en/portfolio                            /en/portfolio.html                       200
+/en/rates.html                           /en/rates                                301!
+/en/rates                                /en/rates.html                           200
+/en/property-management.html             /en/property-management                 301!
+/en/property-management                  /en/property-management.html            200
+/en/terms-consumers.html                 /en/terms-consumers                      301!
+/en/terms-consumers                      /en/terms-consumers.html                 200
+/en/terms-business.html                  /en/terms-business                       301!
+/en/terms-business                       /en/terms-business.html                  200
+/en/privacy.html                         /en/privacy                              301!
+/en/privacy                              /en/privacy.html                         200
