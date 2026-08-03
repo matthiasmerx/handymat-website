@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<script>document.documentElement.classList.add('js');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services | Handymat Services Haarlem &amp; Kennemerland</title>
 <link rel="canonical" href="https://handymat.nl/en/services">
@@ -89,6 +90,21 @@ body { margin:0; }
 
 .lang-switch:hover { background:#3a6b1e; color:#fff !important; }
 .lang-switch svg { display:block; border-radius:2px; box-shadow:0 0 0 1px rgba(0,0,0,0.15); }
+
+/* HAMBURGER MENU (mobile only) */
+.hamburger-btn {
+  display:none;
+  align-items:center;
+  justify-content:center;
+  background:none;
+  border:none;
+  padding:8px;
+  margin:6px 2px 6px 4px;
+  cursor:pointer;
+  color:#3a6b1e;
+}
+.hamburger-btn svg { display:block; width:22px; height:22px; }
+.mobile-menu-panel { display:none; }
 
 /* HERO */
 .hero {
@@ -195,6 +211,22 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   .lang-switch { padding:5px 6px !important; margin:6px 2px 6px 3px !important; }
   .lang-switch .lang-label { display:none; }
   .lang-switch svg { width:14px; height:auto; }
+  .js .hamburger-btn { display:inline-flex; }
+  .js .header-nav a.nav-more { display:none; }
+  .js .mobile-menu-panel.open {
+    display:flex;
+    flex-direction:column;
+    background:#3a6b1e;
+  }
+  .mobile-menu-panel a {
+    display:block;
+    padding:13px 20px;
+    color:#fff;
+    text-decoration:none;
+    font-size:0.85rem;
+    border-top:1px solid rgba(255,255,255,0.15);
+  }
+  .mobile-menu-panel a.active { background:#2c5417; font-weight:500; }
   .diensten-grid { grid-template-columns:1fr; }
 
 
@@ -395,21 +427,53 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 
 <nav class="header-nav">
   <a href="/en/">Home</a>
-  <a href="/en/about">About</a>
-  <a href="/en/services" class="active">Services</a>
+  <a href="/en/about" class="nav-more">About</a>
+  <a href="/en/services" class="active nav-more">Services</a>
   <a href="/en/portfolio">Portfolio</a>
-  <a href="/en/rates">Rates</a>
-  <a href="/en/property-management"><span class="nav-full">Property management</span><span class="nav-short">Property</span></a>
+  <a href="/en/rates" class="nav-more">Rates</a>
+  <a href="/en/property-management" class="nav-more"><span class="nav-full">Property management</span><span class="nav-short">Property</span></a>
   <a href="/en/#contact">Contact</a>
   <a href="/diensten" class="lang-switch" aria-label="Naar de Nederlandse versie"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="10"><rect width="60" height="30" fill="#00247d"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#cf142b" stroke-width="2"/><path d="M30,0 V30 M0,15 H60" stroke="#fff" stroke-width="10"/><path d="M30,0 V30 M0,15 H60" stroke="#cf142b" stroke-width="6"/></svg><span class="lang-label"> EN</span></a>
+  <button type="button" class="hamburger-btn" id="hamburger-btn" aria-expanded="false" aria-controls="mobile-menu-panel" aria-label="Open menu">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
 </nav>
+<div class="mobile-menu-panel" id="mobile-menu-panel">
+  <a href="/en/about">About</a>
+  <a href="/en/services" class="active">Services</a>
+  <a href="/en/rates">Rates</a>
+  <a href="/en/property-management">Property management</a>
+</div>
+<script>
+(function(){
+  var btn = document.getElementById('hamburger-btn');
+  var panel = document.getElementById('mobile-menu-panel');
+  if (!btn || !panel) return;
+  function closeMenu(){ panel.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+  function openMenu(){ panel.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    if (panel.classList.contains('open')) closeMenu(); else openMenu();
+  });
+  document.addEventListener('click', function(e){
+    if (panel.classList.contains('open') && !panel.contains(e.target) && e.target !== btn) closeMenu();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && panel.classList.contains('open')) { closeMenu(); btn.focus(); }
+  });
+  panel.addEventListener('click', function(e){
+    if (e.target.tagName === 'A') closeMenu();
+  });
+})();
+</script>
+
 
 <h1 style="text-align:center;font-size:0.85rem;font-weight:400;color:#999;margin:8px 0 0;">Handyman services Haarlem</h1>
 
 <div class="header-top">
   <table>
     <tr>
-      <td><img src="/images/logo.png" alt="Handymat Services logo" width="600" height="306"></td>
+      <td><a href="/en/"><img src="/images/logo.png" alt="Handymat Services logo" width="600" height="306"></a></td>
       <td><p style="font-family:'Roboto',Arial,sans-serif;font-weight:300;font-size:2.2rem;color:#5a8a2e;line-height:1;">Repairs &amp;<br>renovation</p></td>
     </tr>
   </table>
