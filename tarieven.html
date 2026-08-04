@@ -204,14 +204,16 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   .header-top table td { display:block; text-align:center; padding:4px 0; }
   .header-top table td img { width:200px; margin:0 auto; }
   .header-top table td h1 { font-size:1.5rem; }
-  .header-nav { display:flex; justify-content:center; }
+  .header-nav { display:flex; justify-content:center; align-items:center; }
   .header-nav a { padding:10px 2px; font-size:0.75rem; white-space:nowrap; }
   .header-nav a .nav-full { display:none; }
   .header-nav a .nav-short { display:inline; }
   .lang-switch { padding:5px 6px !important; margin:6px 2px 6px 3px !important; }
   .lang-switch .lang-label { display:none; }
   .lang-switch svg { width:14px; height:auto; }
-  .js .hamburger-btn { display:inline-flex; }
+  .js .header-nav { justify-content:space-between; padding:0 10px; }
+  .js .header-nav a { padding:10px 10px; }
+  .js .hamburger-btn { display:inline-flex; margin:6px 0; }
   .js .header-nav a.nav-more { display:none; }
   .js .mobile-menu-panel.open {
     display:flex;
