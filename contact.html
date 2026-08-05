@@ -7,6 +7,8 @@
 <title>Contact | Handymat Services Haarlem</title>
 <link rel="canonical" href="https://handymat.nl/contact">
 <link rel="alternate" hreflang="nl" href="https://handymat.nl/contact">
+<link rel="alternate" hreflang="en" href="https://handymat.nl/en/contact">
+<link rel="alternate" hreflang="x-default" href="https://handymat.nl/contact">
 <meta name="description" content="Neem contact op met Handymat Services in Haarlem. Bel, WhatsApp of mail voor een klusjesman in Kennemerland.">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -70,6 +72,24 @@ body { margin:0; }
   color:#fff;
   font-weight:500;
 }
+
+.lang-switch {
+  display:inline-flex !important;
+  align-items:center;
+  gap:6px;
+  padding:8px 16px !important;
+  margin:10px 8px 10px 20px;
+  background:#fff;
+  border:1px solid #3a6b1e;
+  border-radius:20px;
+  color:#3a6b1e !important;
+  font-weight:500;
+  font-size:0.9rem !important;
+  vertical-align:middle;
+}
+
+.lang-switch:hover { background:#3a6b1e; color:#fff !important; }
+.lang-switch svg { display:block; border-radius:2px; box-shadow:0 0 0 1px rgba(0,0,0,0.15); }
 
 /* HAMBURGER MENU (mobile only) */
 .hamburger-btn {
@@ -188,6 +208,9 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   .header-nav a { padding:10px 3px; font-size:0.75rem; white-space:nowrap; }
   .header-nav a .nav-full { display:none; }
   .header-nav a .nav-short { display:inline; }
+  .lang-switch { padding:5px 6px !important; margin:6px 2px 6px 3px !important; }
+  .lang-switch .lang-label { display:none; }
+  .lang-switch svg { width:14px; height:auto; }
   .js .header-nav { justify-content:space-between; padding:0 10px; }
   .js .header-nav a { padding:10px 10px; }
   .js .hamburger-btn { display:inline-flex; margin:6px 0; }
@@ -328,6 +351,14 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   <a href="tarieven" class="nav-more">Tarieven</a>
   <a href="verhuurders-vastgoed" class="nav-more"><span class="nav-full">Vastgoedbeheer</span><span class="nav-short">Vastgoed</span></a>
   <a href="contact" class="active">Contact</a>
+  <a href="/en/contact" class="lang-switch" aria-label="Switch to English">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 36" width="20" height="12">
+      <rect width="60" height="12" y="0" fill="#AE1C28"/>
+      <rect width="60" height="12" y="12" fill="#FFFFFF"/>
+      <rect width="60" height="12" y="24" fill="#21468B"/>
+    </svg>
+    <span class="lang-label"> NL</span>
+  </a>
   <button type="button" class="hamburger-btn" id="hamburger-btn" aria-expanded="false" aria-controls="mobile-menu-panel" aria-label="Menu openen">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
   </button>
