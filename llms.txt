@@ -1,0 +1,14 @@
+# Handymat Services
+
+> Klusbedrijf in Haarlem en omgeving (Heemstede, Bloemendaal, Aerdenhout, Zandvoort, Velsen, Hoofddorp). Uurtarief €59,00 incl. BTW, zonder voorrijkosten. Diensten: renovatie, afwerking, timmerwerk, montage, badkamer- en sanitairwerk en IT-diensten aan huis. Geen certificeringsplichtig werk zoals cv-ketelreparatie, gasinstallaties of werk aan de meterkast.
+
+## Pagina's
+
+- [Home](https://handymat.nl/): Introductie, diensten en contactgegevens
+- [Diensten](https://handymat.nl/diensten): Overzicht van alle klussen en werkzaamheden
+- [Tarieven](https://handymat.nl/tarieven): Uurtarief en prijsinformatie
+- [Over mij](https://handymat.nl/over-mij): Achtergrond en werkwijze van Mat
+- [Contact](https://handymat.nl/contact): Contactgegevens en aanvraagformulier
+- [Vastgoedbeheer](https://handymat.nl/verhuurders-vastgoed): Onderhoud voor verhuurders, vastgoedbeheerders en VvE's
+- [IT-diensten](https://handymat.nl/it-diensten): Wifi, netwerk, smarthome en computerproblemen aan huis
+- [Wandpanelen](https://handymat.nl/wandpanelen): Waterdichte SPC-wandpanelen voor badkamer en keuken
