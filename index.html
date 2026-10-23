@@ -391,7 +391,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5",
-    "reviewCount": "7"
+    "reviewCount": "15"
   },
   "review": {
     "@type": "Review",
@@ -468,7 +468,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   <h2>"Zeggen wat je doet. Doen wat je zegt."</h2>
   <p>Herkenbaar? Er staat al maanden iets op de lijst, maar een aannemer is te duur en een specialist heeft geen tijd voor kleine klussen. Of het probleem is juist technisch, en de gewone klusman haakt af.</p>
   <p>Mat pakt het op. Van een druppelende kraan tot een volledige badkamer of keuken renovatie, van een printer die weigert tot wifi die het eindelijk doet in het hele huis.</p>
-  <p>Actief in Haarlem, <a href="klusjesman-heemstede" style="color:#fff;text-decoration:underline;">Heemstede</a>, Bloemendaal, Aerdenhout, Zandvoort, Velsen en <a href="klusjesman-hoofddorp" style="color:#fff;text-decoration:underline;">Hoofddorp</a>.</p>
+  <p>Actief in Haarlem, <a href="klusjesman-heemstede" style="color:#fff;text-decoration:underline;">Heemstede</a>, <a href="klusjesman-bloemendaal" style="color:#fff;text-decoration:underline;">Bloemendaal</a>, Aerdenhout, Zandvoort, Velsen en <a href="klusjesman-hoofddorp" style="color:#fff;text-decoration:underline;">Hoofddorp</a>.</p>
 </section>
 
 <section class="diensten" id="diensten">
@@ -499,7 +499,7 @@ footer a:hover { color:rgba(255,255,255,0.75); }
 <section class="testimonials" id="testimonials">
   <h2>Wat klanten zeggen</h2>
   <p class="testimonial-rating">
-    <span class="rating-number">5.0</span><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rating-count">(7 reviews)</span>
+    <span class="rating-number">5.0</span><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rating-count">(15 reviews)</span>
   </p>
   <p style="text-align:center;">
     <a href="https://g.page/r/CZDGw_dmRXdyEAE/review" target="_blank" rel="noopener" style="display:inline-block;padding:14px 32px;background:#5a9e3a;color:#fff;text-decoration:none;border-radius:6px;font-weight:500;">Laat ook een review achter</a>
@@ -566,6 +566,108 @@ footer a:hover { color:rgba(255,255,255,0.75); }
   </p>
   <p style="color:#999;font-size:0.82rem;">&copy; 2026 Handymat Services</p>
 </footer>
+
+<!-- ===== EXPERIMENT: zwevend Werkspot-blokje — verwijder alles tussen deze twee comments om te stoppen ===== -->
+<style id="werkspot-floating-experiment-style">
+  #werkspot-floating-experiment {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    pointer-events: none;
+  }
+  #werkspot-floating-experiment.werkspot-visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  #werkspot-floating-experiment .werkspot-bubble {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    border-radius: 28px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    padding: 24px 36px 24px 24px;
+    text-decoration: none;
+    color: #222;
+    font-family: Arial, sans-serif;
+    font-size: 1.8rem;
+    max-width: 440px;
+  }
+  #werkspot-floating-experiment .werkspot-bubble img {
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  #werkspot-floating-experiment-close {
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #666;
+    color: #fff;
+    border: none;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 480px) {
+    #werkspot-floating-experiment { right: 24px; bottom: 24px; }
+    #werkspot-floating-experiment .werkspot-bubble { font-size: 1.7rem; max-width: 360px; }
+  }
+</style>
+
+<div id="werkspot-floating-experiment">
+  <a href="https://www.werkspot.nl/profiel/handymat-services" target="_blank" rel="noopener" class="werkspot-bubble">
+    <img src="images/werkspot-logo.jpg" alt="Werkspot logo">
+    <span>Ook te boeken via Werkspot</span>
+  </a>
+  <button type="button" id="werkspot-floating-experiment-close" aria-label="Sluiten">&times;</button>
+</div>
+
+<script id="werkspot-floating-experiment-script">
+(function() {
+  // ---- instelbare waarden (pas hier aan om te testen) ----
+  var WERKSPOT_DELAY_MS = 5000;    // vertraging na laden pagina voordat het blokje verschijnt
+  var WERKSPOT_VISIBLE_MS = 10000; // hoe lang het blokje zichtbaar blijft voordat het vanzelf verdwijnt
+  // ----------------------------------------------------------
+
+  var wrapper = document.getElementById('werkspot-floating-experiment');
+  var closeBtn = document.getElementById('werkspot-floating-experiment-close');
+  if (!wrapper || !closeBtn) return;
+
+  var hideTimer = null;
+
+  function hide() {
+    wrapper.classList.remove('werkspot-visible');
+    if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
+  }
+
+  function show() {
+    wrapper.classList.add('werkspot-visible');
+    hideTimer = setTimeout(hide, WERKSPOT_VISIBLE_MS);
+  }
+
+  setTimeout(show, WERKSPOT_DELAY_MS);
+
+  closeBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    hide();
+  });
+})();
+</script>
+<!-- ===== EINDE EXPERIMENT: zwevend Werkspot-blokje ===== -->
 
 </body>
 </html>
